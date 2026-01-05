@@ -1,6 +1,6 @@
-class CA_M82A2_Base : RifleBoltLock_Base
+class Fresh_M82A2_Base : RifleBoltLock_Base
 {
-	void CA_M82A2_Base()
+	void Fresh_M82A2_Base()
 	{
 		ShowMuzzleFresh(this);
 	}	
@@ -34,8 +34,8 @@ class CA_M82A2_Base : RifleBoltLock_Base
 	
 };
 
-class CA_M82A2_Grey : CA_M82A2_Base {};
-class CA_M82A2_Tan : CA_M82A2_Base {};
-class CA_M82A2_Black : CA_M82A2_Base {};
-class CA_M82A2_Gold : CA_M82A2_Base {};
-class CA_M82A2_Blackice_Leaf : CA_M82A2_Base {};
+class Fresh_M82A2_Grey : Fresh_M82A2_Base {};
+class Fresh_M82A2_Tan : Fresh_M82A2_Base {};
+class Fresh_M82A2_Black : Fresh_M82A2_Base {};
+class Fresh_M82A2_Gold : Fresh_M82A2_Base {};
+class Fresh_M82A2_Blackice_Leaf : Fresh_M82A2_Base {};

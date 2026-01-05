@@ -1,6 +1,6 @@
-class CA_PKM_Base : RifleBoltFree_Base
+class Fresh_PKM_Base : RifleBoltFree_Base
 {
-	void CA_PKM_Base()
+	void Fresh_PKM_Base()
 	{
 		HideAmmoBeltFresh();
 	}	
@@ -83,8 +83,8 @@ class CA_PKM_Base : RifleBoltFree_Base
 	}
 };
 
-class CA_PKM : CA_PKM_Base {};
-class CA_PKM_DragonBreath : CA_PKM_Base {};
-class CA_PKM_Volcano : CA_PKM_Base {};
-class CA_PKM_TigerStripe : CA_PKM_Base {};
-class CA_PKM_Toxic : CA_PKM_Base {};
+class Fresh_PKM : Fresh_PKM_Base {};
+class Fresh_PKM_DragonBreath : Fresh_PKM_Base {};
+class Fresh_PKM_Volcano : Fresh_PKM_Base {};
+class Fresh_PKM_TigerStripe : Fresh_PKM_Base {};
+class Fresh_PKM_Toxic : Fresh_PKM_Base {};

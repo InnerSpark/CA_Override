@@ -12,10 +12,10 @@ class CfgPatches
 	class CA_Override_AKALPHA
 	{
 		units[] = {};
-		weapons[] = {"CA_AKALPHA"};
+		weapons[] = {"Fresh_AKALPHA"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Sounds_Effects"};
-		magazines[] = {"CA_Mag_AKALPHA_60rnd"};
+		magazines[] = {"Fresh_Mag_AKALPHA_60rnd"};
 	};
 };
 class Mode_Safe;
@@ -26,7 +26,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class Rifle_Base;
-	class CA_AKALPHA_Base: Rifle_Base
+	class Fresh_AKALPHA_Base: Rifle_Base
 	{
 		scope = 0;
 		displayName = "AK-ALPHA";
@@ -43,7 +43,7 @@ class cfgWeapons
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"Ammo_762x54","Ammo_762x54Tracer"};
-		magazines[] = {"CA_Mag_AKALPHA_60rnd"};
+		magazines[] = {"Fresh_Mag_AKALPHA_60rnd"};
 		magazineSwitchTime = 0.2;
 		ejectType = 1;
 		initSpeedMultiplier = 1.0;
@@ -146,7 +146,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_AKALPHA: CA_AKALPHA_Base
+	class Fresh_AKALPHA: Fresh_AKALPHA_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\AKAlpha\data\akalpha_co.paa"};
@@ -155,7 +155,7 @@ class cfgWeapons
 class CfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_AKALPHA_60rnd: Magazine_Base
+	class Fresh_Mag_AKALPHA_60rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "AK-ALPHA Magazine";

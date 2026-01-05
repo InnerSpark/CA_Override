@@ -1,4 +1,4 @@
-class CA_Medical_IFAK: MedKitBase
+class Fresh_Medical_IFAK: MedKitBase
 {
 		
 	override void OnApply(PlayerBase player)

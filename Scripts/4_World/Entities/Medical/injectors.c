@@ -1,4 +1,4 @@
-class CA_Medical_Heartbeat_Injector : Inventory_Base
+class Fresh_Medical_Heartbeat_Injector : Inventory_Base
 {
     override void SetActions()
 	{

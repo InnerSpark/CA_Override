@@ -1,6 +1,6 @@
 //#define M18TEARGAS_DEBUG
 
-class CA_Grenade_Stungas : M18SmokeGrenade_ColorBase
+class Fresh_Grenade_Stungas : M18SmokeGrenade_ColorBase
 {
 	// configurable min/max values for random shock induced on update
 	protected const float MAX_SHOCK_INFLICTED = -15.0;
@@ -11,7 +11,7 @@ class CA_Grenade_Stungas : M18SmokeGrenade_ColorBase
 	//protected TearGasTrigger m_Trigger;
 	protected Shape m_AOEShape;
 
-	void CA_Grenade_Stungas()
+	void Fresh_Grenade_Stungas()
 	{
 		SetFuseDelay(10);
 		SetPinnable(true);
@@ -26,7 +26,7 @@ class CA_Grenade_Stungas : M18SmokeGrenade_ColorBase
 		#endif
 	}
 
-	void ~CA_Grenade_Stungas()
+	void ~Fresh_Grenade_Stungas()
 	{
 		//if (m_Trigger)
 		//	GetGame().ObjectDelete(m_Trigger);

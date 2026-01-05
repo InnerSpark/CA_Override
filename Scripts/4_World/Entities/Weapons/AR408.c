@@ -1,6 +1,6 @@
-class CA_AR408_Base : RifleBoltLock_Base
+class Fresh_AR408_Base : RifleBoltLock_Base
 {
-	void CA_AR408_Base()
+	void Fresh_AR408_Base()
 	{
 		UnfoldOpticsFresh(this);
 	}	
@@ -30,5 +30,5 @@ class CA_AR408_Base : RifleBoltLock_Base
 		return new M4a1Recoil(this);
 	}
 };
-class CA_AR408 : CA_AR408_Base{};
-class CA_AR50BMG : CA_AR408_Base{};
+class Fresh_AR408 : Fresh_AR408_Base{};
+class Fresh_AR50BMG : Fresh_AR408_Base{};

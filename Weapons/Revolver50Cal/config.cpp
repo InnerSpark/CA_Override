@@ -11,8 +11,8 @@ class CfgPatches
 {
 	class CA_Override_Revolver50BMG
 	{
-		units[] = {"CA_Revolver50BMG_Cylinder","CA_Revolver50BMG_Ejector"};
-		weapons[] = {"CA_Revolver50BMG"};
+		units[] = {"Fresh_Revolver50BMG_Cylinder","Fresh_Revolver50BMG_Ejector"};
+		weapons[] = {"Fresh_Revolver50BMG"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","DZ_Pistols","DZ_Sounds_Effects"};
 	};
@@ -26,7 +26,7 @@ class OpticsInfoPistol;
 class cfgWeapons
 {
 	class Pistol_Base;
-	class CA_Revolver50BMG_Base: Pistol_Base
+	class Fresh_Revolver50BMG_Base: Pistol_Base
 	{
 		scope = 0;
 		weight = 2500;
@@ -40,7 +40,7 @@ class cfgWeapons
 		chamberSize = 1;
 		chamberedRound = "";
 		magazines[] = {};
-		chamberableFrom[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
+		chamberableFrom[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
 		ejectType = 8;
 		initSpeedMultiplier = 1.0;
 		recoilModifier[] = {2,2,2};
@@ -74,7 +74,7 @@ class cfgWeapons
 			cartridgeVel = "nabojniceend_2";
 			modes[] = {"Single"};
 			magazines[] = {};
-			chamberableFrom[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
+			chamberableFrom[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
 			barrelArmor = 1.758;
 			soundBullet[] = {};
 			class Single: Mode_SemiAuto
@@ -128,7 +128,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_Revolver50BMG: CA_Revolver50BMG_Base
+	class Fresh_Revolver50BMG: Fresh_Revolver50BMG_Base
 	{
 		scope = 2;
 		displayName = "The Statement";
@@ -153,7 +153,7 @@ class cfgWeapons
 class cfgVehicles
 {
 	class Inventory_Base;
-	class CA_Revolver50BMG_Cylinder: Inventory_Base
+	class Fresh_Revolver50BMG_Cylinder: Inventory_Base
 	{
 		scope = 2;
 		model = "CA_Override\Weapons\Revolver50Cal\proxy\cylinder.p3d";
@@ -223,7 +223,7 @@ class cfgVehicles
 			};
 		};
 	};
-	class CA_Revolver50BMG_Ejector: Inventory_Base
+	class Fresh_Revolver50BMG_Ejector: Inventory_Base
 	{
 		scope = 2;
 		model = "CA_Override\Weapons\Revolver50Cal\proxy\ejector.p3d";

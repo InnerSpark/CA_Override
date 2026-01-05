@@ -12,10 +12,10 @@ class CfgPatches
 	class CA_Override_M1000X
 	{
 		units[] = {};
-		weapons[] = {"CA_M1000X_Black","CA_M1000X_Tan","CA_M1000X_Green","CA_M1000X_White"};
+		weapons[] = {"Fresh_M1000X_Black","Fresh_M1000X_Tan","Fresh_M1000X_Green","Fresh_M1000X_White"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Weapons_Magazines","DZ_Sounds_Effects"};
-		magazines[] = {"CA_M1000X_Magazine"};
+		magazines[] = {"Fresh_M1000X_Magazine"};
 	};
 };
 class Mode_Safe;
@@ -26,7 +26,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class Rifle_Base;
-	class CA_M1000X_Base: Rifle_Base
+	class Fresh_M1000X_Base: Rifle_Base
 	{
 		scope = 0;
 		displayName = "Remington M1000X";
@@ -45,7 +45,7 @@ class cfgWeapons
 		initSpeedMultiplier = 1.0;
 		chamberedRound = "";
 		chamberableFrom[] = {"GCGN_Ammo_408Chey","Rev_Ammo_408"};
-		magazines[] = {"CA_M1000X_Magazine"};
+		magazines[] = {"Fresh_M1000X_Magazine"};
 		ejectType = 1;
 		recoilModifier[] = {2.2,2.2,1.7};
 		swayModifier[] = {1.5,1.5,0.9};
@@ -159,22 +159,22 @@ class cfgWeapons
 			type = "shot";
 		};
 	};
-	class CA_M1000X_Black: CA_M1000X_Base
+	class Fresh_M1000X_Black: Fresh_M1000X_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\SVCH\data\svch_black_co.paa"};
 	};
-	class CA_M1000X_Tan: CA_M1000X_Base
+	class Fresh_M1000X_Tan: Fresh_M1000X_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\SVCH\data\svch_tan_co.paa"};
 	};
-	class CA_M1000X_Green: CA_M1000X_Base
+	class Fresh_M1000X_Green: Fresh_M1000X_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\SVCH\data\svch_green_co.paa"};
 	};
-	class CA_M1000X_White: CA_M1000X_Base
+	class Fresh_M1000X_White: Fresh_M1000X_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\SVCH\data\svch_co.paa"};
@@ -183,7 +183,7 @@ class cfgWeapons
 class cfgMagazines
 {
 	class Magazine_Base;
-	class CA_M1000X_Magazine: Magazine_Base
+	class Fresh_M1000X_Magazine: Magazine_Base
 	{
 		scope = 2;
 		displayName = "M1000X Magazine";

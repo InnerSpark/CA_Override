@@ -12,10 +12,10 @@ class CfgPatches
 	class CA_Override_HKG28
 	{
 		units[] = {};
-		weapons[] = {"CA_HKG28_Tan","CA_HKG28_Black","CA_HKG28_Kryptec_Mandrake","CA_HKG28_Galactic","CA_HKG28_Flecktarn","CA_HKG28_DigitalSky","CA_HKG28_DragonBreath"};
+		weapons[] = {"Fresh_HKG28_Tan","Fresh_HKG28_Black","Fresh_HKG28_Kryptec_Mandrake","Fresh_HKG28_Galactic","Fresh_HKG28_Flecktarn","Fresh_HKG28_DigitalSky","Fresh_HKG28_DragonBreath"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Sounds_Effects","DZ_Weapons_Magazines","DZ_Weapons_Muzzles"};
-		magazines[] = {"CA_Mag_HKG28_Tan_30rnd","CA_Mag_HKG28_Black_30rnd","CA_Mag_HKG28_Kryptek_Mandrake_30rnd","CA_Mag_HKG28_Galactic_30rnd","CA_Mag_HKG28_Flecktarn_30rnd","CA_Mag_HKG28_DigitalSky_30rnd","CA_Mag_HKG28_DragonBreath_30rnd"};
+		magazines[] = {"Fresh_Mag_HKG28_Tan_30rnd","Fresh_Mag_HKG28_Black_30rnd","Fresh_Mag_HKG28_Kryptek_Mandrake_30rnd","Fresh_Mag_HKG28_Galactic_30rnd","Fresh_Mag_HKG28_Flecktarn_30rnd","Fresh_Mag_HKG28_DigitalSky_30rnd","Fresh_Mag_HKG28_DragonBreath_30rnd"};
 	};
 };
 class Mode_Safe;
@@ -26,7 +26,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class Rifle_Base;
-	class CA_HKG28_Base: Rifle_Base
+	class Fresh_HKG28_Base: Rifle_Base
 	{
 		scope = 0;
 		displayName = "HK-G28";
@@ -44,7 +44,7 @@ class cfgWeapons
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"Rev_Ammo_338"};
-		magazines[] = {"CA_Mag_HKG28_Tan_30rnd","CA_Mag_HKG28_Black_30rnd","CA_Mag_HKG28_Kryptek_Mandrake_30rnd","CA_Mag_HKG28_Galactic_30rnd","CA_Mag_HKG28_Flecktarn_30rnd","CA_Mag_HKG28_DigitalSky_30rnd","CA_Mag_HKG28_DragonBreath_30rnd"};
+		magazines[] = {"Fresh_Mag_HKG28_Tan_30rnd","Fresh_Mag_HKG28_Black_30rnd","Fresh_Mag_HKG28_Kryptek_Mandrake_30rnd","Fresh_Mag_HKG28_Galactic_30rnd","Fresh_Mag_HKG28_Flecktarn_30rnd","Fresh_Mag_HKG28_DigitalSky_30rnd","Fresh_Mag_HKG28_DragonBreath_30rnd"};
 		ejectType = 1;
 		initSpeedMultiplier = 0.25;
 		recoilModifier[] = {0.64,0.64,0.64};
@@ -160,37 +160,37 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_HKG28_Tan: CA_HKG28_Base
+	class Fresh_HKG28_Tan: Fresh_HKG28_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_tan_co.paa"};
 	};
-	class CA_HKG28_Black: CA_HKG28_Base
+	class Fresh_HKG28_Black: Fresh_HKG28_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_black_co.paa"};
 	};
-	class CA_HKG28_Kryptec_Mandrake: CA_HKG28_Base
+	class Fresh_HKG28_Kryptec_Mandrake: Fresh_HKG28_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_kryptec_mandrake_co.paa"};
 	};
-	class CA_HKG28_Galactic: CA_HKG28_Base
+	class Fresh_HKG28_Galactic: Fresh_HKG28_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_galactic_co.paa"};
 	};
-	class CA_HKG28_Flecktarn: CA_HKG28_Base
+	class Fresh_HKG28_Flecktarn: Fresh_HKG28_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_flecktarn_co.paa"};
 	};
-	class CA_HKG28_DigitalSky: CA_HKG28_Base
+	class Fresh_HKG28_DigitalSky: Fresh_HKG28_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_digitalsky_co.paa"};
 	};
-	class CA_HKG28_DragonBreath: CA_HKG28_Base
+	class Fresh_HKG28_DragonBreath: Fresh_HKG28_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_dragonbreath_co.paa"};
@@ -199,7 +199,7 @@ class cfgWeapons
 class cfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_HKG28_Tan_30rnd: Magazine_Base
+	class Fresh_Mag_HKG28_Tan_30rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "HK-G28 Magazine";
@@ -289,32 +289,32 @@ class cfgMagazines
 			};
 		};
 	};
-	class CA_Mag_HKG28_Black_30rnd: CA_Mag_HKG28_Tan_30rnd
+	class Fresh_Mag_HKG28_Black_30rnd: Fresh_Mag_HKG28_Tan_30rnd
 	{
 		hiddenSelections[] = {"color"};
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_black_co.paa"};
 	};
-	class CA_Mag_HKG28_Kryptek_Mandrake_30rnd: CA_Mag_HKG28_Tan_30rnd
+	class Fresh_Mag_HKG28_Kryptek_Mandrake_30rnd: Fresh_Mag_HKG28_Tan_30rnd
 	{
 		hiddenSelections[] = {"color"};
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_kryptec_mandrake_co.paa"};
 	};
-	class CA_Mag_HKG28_Galactic_30rnd: CA_Mag_HKG28_Tan_30rnd
+	class Fresh_Mag_HKG28_Galactic_30rnd: Fresh_Mag_HKG28_Tan_30rnd
 	{
 		hiddenSelections[] = {"color"};
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_galactic_co.paa"};
 	};
-	class CA_Mag_HKG28_Flecktarn_30rnd: CA_Mag_HKG28_Tan_30rnd
+	class Fresh_Mag_HKG28_Flecktarn_30rnd: Fresh_Mag_HKG28_Tan_30rnd
 	{
 		hiddenSelections[] = {"color"};
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_flecktarn_co.paa"};
 	};
-	class CA_Mag_HKG28_DigitalSky_30rnd: CA_Mag_HKG28_Tan_30rnd
+	class Fresh_Mag_HKG28_DigitalSky_30rnd: Fresh_Mag_HKG28_Tan_30rnd
 	{
 		hiddenSelections[] = {"color"};
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_digitalsky_co.paa"};
 	};
-	class CA_Mag_HKG28_DragonBreath_30rnd: CA_Mag_HKG28_Tan_30rnd
+	class Fresh_Mag_HKG28_DragonBreath_30rnd: Fresh_Mag_HKG28_Tan_30rnd
 	{
 		hiddenSelections[] = {"color"};
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\HKG28\data\hk28_dragonbreath_co.paa"};

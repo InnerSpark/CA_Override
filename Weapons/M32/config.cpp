@@ -12,11 +12,11 @@ class CfgPatches
 	class CA_Override_M32
 	{
 		units[] = {};
-		weapons[] = {"CA_M32"};
+		weapons[] = {"Fresh_M32"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Ammunition","DZ_Weapons_Projectiles"};
-		magazines[] = {"CA_Ammo_M406"};
-		ammo[] = {"CA_Bullet_M406"};
+		magazines[] = {"Fresh_Ammo_M406"};
+		ammo[] = {"Fresh_Bullet_M406"};
 	};
 };
 class Mode_Safe;
@@ -27,7 +27,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class Rifle_Base;
-	class CA_M32_Base: Rifle_Base
+	class Fresh_M32_Base: Rifle_Base
 	{
 		scope = 0;
 		displayName = "Milkor MGL";
@@ -42,7 +42,7 @@ class cfgWeapons
 		repairCosts[] = {25.0};
 		chamberSize = 6;
 		chamberedRound = "";
-		chamberableFrom[] = {"CA_Ammo_M406","CA_Ammo_M651","Ammo_Flare","Ammo_FlareRed","Ammo_FlareGreen","Ammo_FlareBlue","Ammo_40mm_Explosive","Ammo_40mm_Smoke_Red","Ammo_40mm_Smoke_Green","Ammo_40mm_Smoke_White","Ammo_40mm_Smoke_Black","Ammo_40mm_ChemGas"};
+		chamberableFrom[] = {"Fresh_Ammo_M406","Fresh_Ammo_M651","Ammo_Flare","Ammo_FlareRed","Ammo_FlareGreen","Ammo_FlareBlue","Ammo_40mm_Explosive","Ammo_40mm_Smoke_Red","Ammo_40mm_Smoke_Green","Ammo_40mm_Smoke_White","Ammo_40mm_Smoke_Black","Ammo_40mm_ChemGas"};
 		magazines[] = {};
 		DisplayMagazine = 0;
 		PPDOFProperties[] = {1,0.5,10,140,4,10};
@@ -105,7 +105,7 @@ class cfgWeapons
 			type = "shot";
 		};
 	};
-	class CA_M32: CA_M32_Base
+	class Fresh_M32: Fresh_M32_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\M32\data\m32_co.paa","CA_Override\Weapons\M32\data\m32_ammo_co.paa"};
@@ -114,7 +114,7 @@ class cfgWeapons
 class CfgMagazines
 {
 	class Ammunition_Base;
-	class CA_Ammo_M406: Ammunition_Base
+	class Fresh_Ammo_M406: Ammunition_Base
 	{
 		scope = 2;
 		displayName = "M406 HE";
@@ -125,7 +125,7 @@ class CfgMagazines
 		itemSize[] = {1,2};
 		weight = 30;
 		count = 6;
-		ammo = "CA_Bullet_M406";
+		ammo = "Fresh_Bullet_M406";
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -142,11 +142,11 @@ class CfgMagazines
 class cfgAmmo
 {
 	class Bullet_Base;
-	class CA_Bullet_M406: Bullet_Base
+	class Fresh_Bullet_M406: Bullet_Base
 	{
 		scope = 2;
 		model = "CA_Override\Weapons\M32\ammo_projectile.p3d";
-		spawnPileType = "CA_Ammo_M406";
+		spawnPileType = "Fresh_Ammo_M406";
 		hit = 12;
 		deflecting = 0;
 		caliber = 0.1;
@@ -188,9 +188,9 @@ class cfgAmmo
 };
 class cfgAmmoTypes
 {
-	class AType_CA_Bullet_M406
+	class AType_Fresh_Bullet_M406
 	{
-		name = "CA_Bullet_M406";
+		name = "Fresh_Bullet_M406";
 	};
 };
 class CfgSoundShaders

@@ -1,4 +1,4 @@
-class CA_M32_Base extends Rifle_Base
+class Fresh_M32_Base extends Rifle_Base
 {
 	ref WeaponStateBase C0;
 	ref	WeaponStateBase C1;
@@ -194,4 +194,4 @@ class CA_M32_Base extends Rifle_Base
 	}
 };
 
-class CA_M32 extends CA_M32_Base {};
+class Fresh_M32 extends Fresh_M32_Base {};

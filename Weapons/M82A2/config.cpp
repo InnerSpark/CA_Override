@@ -11,11 +11,11 @@ class CfgPatches
 {
 	class CBMGuns_M82A2
 	{
-		units[] = {"CA_Suppressor_M82A2_Grey","CA_Suppressor_M82A2_Black","CA_Suppressor_M82A2_Tan"};
-		weapons[] = {"CA_M82A2_Grey","CA_M82A2_Tan","CA_M82A2_Black","CA_M82A2_Gold","CA_M82A2_Blackice_Leaf"};
+		units[] = {"Fresh_Suppressor_M82A2_Grey","Fresh_Suppressor_M82A2_Black","Fresh_Suppressor_M82A2_Tan"};
+		weapons[] = {"Fresh_M82A2_Grey","Fresh_M82A2_Tan","Fresh_M82A2_Black","Fresh_M82A2_Gold","Fresh_M82A2_Blackice_Leaf"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Weapons_Muzzles","DZ_Weapons_Magazines","DZ_Weapons_Ammunition","DZ_Sounds_Effects"};
-		magazines[] = {"CA_Mag_M82A2_10Rnd"};
+		magazines[] = {"Fresh_Mag_M82A2_10Rnd"};
 		ammo[] = {};
 	};
 };
@@ -27,7 +27,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class Rifle_Base;
-	class CA_M82A2_Base: Rifle_Base
+	class Fresh_M82A2_Base: Rifle_Base
 	{
 		scope = 0;
 		displayName = "M82A2";
@@ -42,8 +42,8 @@ class cfgWeapons
 		WeaponLength = 1.28986;
 		chamberedRound = "";
 		chamberSize = 1;
-		chamberableFrom[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","Rev_Ammo_50BMG","TTC_Ammo_50BMG"};
-		magazines[] = {"CA_Mag_M82A2_10Rnd"};
+		chamberableFrom[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","Rev_Ammo_50BMG","TTC_Ammo_50BMG"};
+		magazines[] = {"Fresh_Mag_M82A2_10Rnd"};
 		ejectType = 1;
 		initSpeedMultiplier = 1.0;
 		itemSize[] = {10,3};
@@ -359,22 +359,22 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_M82A2_Grey: CA_M82A2_Base
+	class Fresh_M82A2_Grey: Fresh_M82A2_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\M82A2\data\m82a2_base_co.paa","CA_Override\Weapons\M82A2\data\cheek_co.paa"};
 	};
-	class CA_M82A2_Tan: CA_M82A2_Base
+	class Fresh_M82A2_Tan: Fresh_M82A2_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\M82A2\data\m82a2_tan_co.paa","CA_Override\Weapons\M82A2\data\cheek_co.paa"};
 	};
-	class CA_M82A2_Black: CA_M82A2_Base
+	class Fresh_M82A2_Black: Fresh_M82A2_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\M82A2\data\m82a2_black_co.paa","CA_Override\Weapons\M82A2\data\cheek_co.paa"};
 	};
-	class CA_M82A2_Gold: CA_M82A2_Base
+	class Fresh_M82A2_Gold: Fresh_M82A2_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\M82A2\data\m82a2_black_co.paa","CA_Override\Weapons\M82A2\data\cheek_co.paa"};
@@ -391,7 +391,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_M82A2_Blackice_Leaf: CA_M82A2_Base
+	class Fresh_M82A2_Blackice_Leaf: Fresh_M82A2_Base
 	{
 		scope = 2;
 		displayName = "M82A2 Blackice";
@@ -413,7 +413,7 @@ class cfgWeapons
 class cfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_M82A2_10Rnd: Magazine_Base
+	class Fresh_Mag_M82A2_10Rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "M82A2 Magazine";
@@ -422,8 +422,8 @@ class cfgMagazines
 		weight = 400;
 		itemSize[] = {3,3};
 		count = 10;
-		ammo = "CA_Bullet_50BMG";
-		ammoItems[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","Rev_Ammo_50BMG"};
+		ammo = "Fresh_Bullet_50BMG";
+		ammoItems[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","Rev_Ammo_50BMG"};
 		tracersEvery = 0;
 		class DamageSystem
 		{
@@ -507,7 +507,7 @@ class cfgMagazines
 class cfgVehicles
 {
 	class ItemSuppressor;
-	class CA_M82A2_Base_Suppressor: ItemSuppressor
+	class Fresh_M82A2_Base_Suppressor: ItemSuppressor
 	{
 		scope = 0;
 		displayName = "M82A2 Suppressor";
@@ -574,17 +574,17 @@ class cfgVehicles
 			};
 		};
 	};
-	class CA_Suppressor_M82A2_Grey: CA_M82A2_Base_Suppressor
+	class Fresh_Suppressor_M82A2_Grey: Fresh_M82A2_Base_Suppressor
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\M82A2\data\suppressor_base_co.paa"};
 	};
-	class CA_Suppressor_M82A2_Black: CA_M82A2_Base_Suppressor
+	class Fresh_Suppressor_M82A2_Black: Fresh_M82A2_Base_Suppressor
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\M82A2\data\suppressor_black_co.paa"};
 	};
-	class CA_Suppressor_M82A2_Tan: CA_M82A2_Base_Suppressor
+	class Fresh_Suppressor_M82A2_Tan: Fresh_M82A2_Base_Suppressor
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\M82A2\data\suppressor_tan_co.paa"};

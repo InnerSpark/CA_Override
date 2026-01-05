@@ -1,4 +1,4 @@
-class CA_Tac50_Base: BoltActionRifle_ExternalMagazine_Base
+class Fresh_Tac50_Base: BoltActionRifle_ExternalMagazine_Base
 {
 	override RecoilBase SpawnRecoilObject()
     {
@@ -6,8 +6,8 @@ class CA_Tac50_Base: BoltActionRifle_ExternalMagazine_Base
     }
 	
 };
-class CA_Tac50_Tan extends CA_Tac50_Base{};
-class CA_Tac50_Green extends CA_Tac50_Base{};
-class CA_Tac50_Black extends CA_Tac50_Base{};
-class CA_Tac50_Camo extends CA_Tac50_Base{};
-class CA_Tac50_Obsidian extends CA_Tac50_Base{};
+class Fresh_Tac50_Tan extends Fresh_Tac50_Base{};
+class Fresh_Tac50_Green extends Fresh_Tac50_Base{};
+class Fresh_Tac50_Black extends Fresh_Tac50_Base{};
+class Fresh_Tac50_Camo extends Fresh_Tac50_Base{};
+class Fresh_Tac50_Obsidian extends Fresh_Tac50_Base{};

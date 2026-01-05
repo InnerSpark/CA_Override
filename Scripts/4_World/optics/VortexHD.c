@@ -1,1 +1,0 @@
-class CA_Optics_VortexHD extends ItemOptics{};

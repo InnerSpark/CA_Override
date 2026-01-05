@@ -14,13 +14,13 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Characters"};
-		units[] = {"CA_Venom_Grenade"};
+		units[] = {"Fresh_Venom_Grenade"};
 	};
 };
 class CfgVehicles
 {
 	class Grenade_Base;
-	class CA_Venom_Grenade: Grenade_Base
+	class Fresh_Venom_Grenade: Grenade_Base
 	{
 		scope = 2;
 		displayName = "F1 Grenade";

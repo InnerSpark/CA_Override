@@ -12,10 +12,10 @@ class CfgPatches
 	class CA_Override_Anzio
 	{
 		units[] = {};
-		weapons[] = {"CA_Anzio"};
+		weapons[] = {"Fresh_Anzio"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Weapons_Magazines","DZ_Sounds_Effects","DZ_Weapons_Ammunition","DZ_Weapons_Projectiles"};
-		magazines[] = {"CA_Mag_Anzio_5rnd"};
+		magazines[] = {"Fresh_Mag_Anzio_5rnd"};
 		ammo[] = {};
 	};
 };
@@ -27,7 +27,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class BoltActionRifle_ExternalMagazine_Base;
-	class CA_Anzio_Base: BoltActionRifle_ExternalMagazine_Base
+	class Fresh_Anzio_Base: BoltActionRifle_ExternalMagazine_Base
 	{
 		scope = 0;
 		displayName = "Anzio 20mm";
@@ -43,8 +43,8 @@ class cfgWeapons
 		WeaponLength = 2.1;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"CA_Ammo_20mm"};
-		magazines[] = {"CA_Mag_Anzio_5rnd"};
+		chamberableFrom[] = {"Fresh_Ammo_20mm"};
+		magazines[] = {"Fresh_Mag_Anzio_5rnd"};
 		barrelArmor = 5.2;
 		ejectType = 1;
 		initSpeedMultiplier = 1.0;
@@ -116,7 +116,7 @@ class cfgWeapons
 			distanceZoomMax = 100;
 		};
 	};
-	class CA_Anzio: CA_Anzio_Base
+	class Fresh_Anzio: Fresh_Anzio_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Catbite\data\anzio_co.paa"};
@@ -125,7 +125,7 @@ class cfgWeapons
 class cfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_Anzio_5rnd: Magazine_Base
+	class Fresh_Mag_Anzio_5rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "Anzio Magazine";
@@ -134,8 +134,8 @@ class cfgMagazines
 		weight = 600;
 		itemSize[] = {3,2};
 		count = 5;
-		ammo = "CA_Bullet_20mm";
-		ammoItems[] = {"CA_Ammo_20mm"};
+		ammo = "Fresh_Bullet_20mm";
+		ammoItems[] = {"Fresh_Ammo_20mm"};
 		tracersEvery = 0;
 		class InventorySlotsOffsets
 		{

@@ -9,20 +9,20 @@
 
 class CfgPatches
 {
-	class CA_Ammo_50BMG
+	class Fresh_Ammo_50BMG
 	{
-		units[] = {"CA_AmmoBox_50BMG_10Rnd","CA_AmmoBox_50BMGAP_10Rnd"};
+		units[] = {"Fresh_AmmoBox_50BMG_10Rnd","Fresh_AmmoBox_50BMGAP_10Rnd"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Ammunition","DZ_Weapons_Projectiles"};
-		magazines[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP"};
-		ammo[] = {"CA_Bullet_50BMG","Bullet_50APFresh"};
+		magazines[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP"};
+		ammo[] = {"Fresh_Bullet_50BMG","Bullet_50APFresh"};
 	};
 };
 class cfgMagazines
 {
 	class Ammunition_Base;
-	class CA_Ammo_50BMG: Ammunition_Base
+	class Fresh_Ammo_50BMG: Ammunition_Base
 	{
 		scope = 2;
 		displayName = ".50BMG Rounds";
@@ -31,7 +31,7 @@ class cfgMagazines
 		weight = 70;
 		count = 40;
 		itemSize[] = {1,2};
-		ammo = "CA_Bullet_50BMG";
+		ammo = "Fresh_Bullet_50BMG";
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -44,7 +44,7 @@ class cfgMagazines
 			};
 		};
 	};
-	class CA_Ammo_50BMG_AP: Ammunition_Base
+	class Fresh_Ammo_50BMG_AP: Ammunition_Base
 	{
 		scope = 2;
 		displayName = ".50 BMG AP Rounds";
@@ -70,13 +70,13 @@ class cfgMagazines
 class CfgAmmo
 {
 	class Bullet_Base;
-	class CA_Bullet_50BMG: Bullet_Base
+	class Fresh_Bullet_50BMG: Bullet_Base
 	{
 		scope = 2;
 		cartridge = "FxCartridge_50BMGFresh";
 		casing = "FxCartridge_50BMGFresh";
 		round = "FxRound_50BMGFresh";
-		spawnPileType = "CA_Ammo_50BMG";
+		spawnPileType = "Fresh_Ammo_50BMG";
 		hit = 10;
 		indirectHit = 0;
 		indirectHitRange = 0;
@@ -125,7 +125,7 @@ class CfgAmmo
 		cartridge = "FxCartridge_50BMGFresh";
 		casing = "FxCartridge_50BMGFresh";
 		round = "FxRound_50BMGFresh";
-		spawnPileType = "CA_Ammo_50BMG_AP";
+		spawnPileType = "Fresh_Ammo_50BMG_AP";
 		hit = 10;
 		indirectHit = 0;
 		indirectHitRange = 0;
@@ -173,7 +173,7 @@ class CfgAmmo
 class CfgVehicles
 {
 	class Box_Base;
-	class CA_AmmoBox_50BMG_10Rnd: Box_Base
+	class Fresh_AmmoBox_50BMG_10Rnd: Box_Base
 	{
 		scope = 2;
 		displayName = "Boxed .50 BMG Rounds";
@@ -197,7 +197,7 @@ class CfgVehicles
 		};
 		class Resources
 		{
-			class CA_Ammo_50BMG
+			class Fresh_Ammo_50BMG
 			{
 				value = 10;
 				variable = "quantity";
@@ -215,7 +215,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class CA_AmmoBox_50BMGAP_10Rnd: Box_Base
+	class Fresh_AmmoBox_50BMGAP_10Rnd: Box_Base
 	{
 		scope = 2;
 		displayName = "Boxed .50 BMG AP Rounds";
@@ -239,7 +239,7 @@ class CfgVehicles
 		};
 		class Resources
 		{
-			class CA_Ammo_50BMG_AP
+			class Fresh_Ammo_50BMG_AP
 			{
 				value = 10;
 				variable = "quantity";
@@ -270,9 +270,9 @@ class CfgVehicles
 };
 class cfgAmmoTypes
 {
-	class AType_CA_Bullet_50BMG
+	class AType_Fresh_Bullet_50BMG
 	{
-		name = "CA_Bullet_50BMG";
+		name = "Fresh_Bullet_50BMG";
 	};
 	class AType_Bullet_50APFresh
 	{

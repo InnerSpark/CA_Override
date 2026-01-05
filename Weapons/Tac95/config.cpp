@@ -12,10 +12,10 @@ class CfgPatches
 	class CA_Override_Tac95
 	{
 		units[] = {};
-		weapons[] = {"CA_Tac95","CA_Tac95_Carbon","CA_Tac95_CarbonRed"};
+		weapons[] = {"Fresh_Tac95","Fresh_Tac95_Carbon","Fresh_Tac95_CarbonRed"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Weapons_Magazines","DZ_Sounds_Effects","DZ_Weapons_Ammunition","DZ_Weapons_Projectiles"};
-		magazines[] = {"CA_Mag_Tac95_5rnd","CA_Mag_Tac95_Carbon_5rnd"};
+		magazines[] = {"Fresh_Mag_Tac95_5rnd","Fresh_Mag_Tac95_Carbon_5rnd"};
 		ammo[] = {};
 	};
 };
@@ -27,7 +27,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class BoltActionRifle_ExternalMagazine_Base;
-	class CA_Tac95_Base: BoltActionRifle_ExternalMagazine_Base
+	class Fresh_Tac95_Base: BoltActionRifle_ExternalMagazine_Base
 	{
 		scope = 0;
 		displayName = "Tac-95";
@@ -44,7 +44,7 @@ class cfgWeapons
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"GCGN_Ammo_408Chey","Rev_Ammo_408"};
-		magazines[] = {"CA_Mag_Tac95_5rnd","CA_Mag_Tac95_Carbon_5rnd"};
+		magazines[] = {"Fresh_Mag_Tac95_5rnd","Fresh_Mag_Tac95_Carbon_5rnd"};
 		barrelArmor = 6.8;
 		ejectType = 1;
 		initSpeedMultiplier = 1.0;
@@ -116,17 +116,17 @@ class cfgWeapons
 			distanceZoomMax = 100;
 		};
 	};
-	class CA_Tac95: CA_Tac95_Base
+	class Fresh_Tac95: Fresh_Tac95_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Tac95\data\tac95_tan_co.paa"};
 	};
-	class CA_Tac95_Carbon: CA_Tac95_Base
+	class Fresh_Tac95_Carbon: Fresh_Tac95_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Tac95\data\tac95_carbon_co.paa"};
 	};
-	class CA_Tac95_CarbonRed: CA_Tac95_Base
+	class Fresh_Tac95_CarbonRed: Fresh_Tac95_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Tac95\data\tac95_carbonred_co.paa"};
@@ -135,7 +135,7 @@ class cfgWeapons
 class cfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_Tac95_5rnd: Magazine_Base
+	class Fresh_Mag_Tac95_5rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "Tac-95 Magazine";
@@ -227,7 +227,7 @@ class cfgMagazines
 			};
 		};
 	};
-	class CA_Mag_Tac95_Carbon_5rnd: CA_Mag_Tac95_5rnd
+	class Fresh_Mag_Tac95_Carbon_5rnd: Fresh_Mag_Tac95_5rnd
 	{
 		scope = 2;
 		hiddenSelections[] = {"magazine"};

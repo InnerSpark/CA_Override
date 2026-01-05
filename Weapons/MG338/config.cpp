@@ -12,10 +12,10 @@ class CfgPatches
 	class CA_Override_MG338
 	{
 		units[] = {};
-		weapons[] = {"CA_MG338_Tan"};
+		weapons[] = {"Fresh_MG338_Tan"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data"};
-		magazines[] = {"CA_Mag_MG338_100rnd"};
+		magazines[] = {"Fresh_Mag_MG338_100rnd"};
 	};
 };
 class Mode_Safe;
@@ -26,7 +26,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class Rifle_Base;
-	class CA_MG338_Base: Rifle_Base
+	class Fresh_MG338_Base: Rifle_Base
 	{
 		scope = 0;
 		displayName = "Sig Sauer MG .338";
@@ -44,7 +44,7 @@ class cfgWeapons
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"Rev_Ammo_338"};
-		magazines[] = {"CA_Mag_MG338_100rnd"};
+		magazines[] = {"Fresh_Mag_MG338_100rnd"};
 		initSpeedMultiplier = 0.2;
 		ejectType = 1;
 		modes[] = {"FullAuto"};
@@ -156,7 +156,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_MG338_Tan: CA_MG338_Base
+	class Fresh_MG338_Tan: Fresh_MG338_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\MG338\data\mg338_tan_co.paa"};
@@ -165,7 +165,7 @@ class cfgWeapons
 class cfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_MG338_100rnd: Magazine_Base
+	class Fresh_Mag_MG338_100rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "Sig Sauer MG .338 Belt";

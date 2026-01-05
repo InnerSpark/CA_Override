@@ -12,7 +12,7 @@ class CfgPatches
 	class CA_Override_CX20
 	{
 		units[] = {};
-		weapons[] = {"CA_CX20"};
+		weapons[] = {"Fresh_CX20"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Sounds_Effects"};
 	};
@@ -22,7 +22,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class BoltActionRifle_InnerMagazine_Base;
-	class CA_CX20_Base: BoltActionRifle_InnerMagazine_Base
+	class Fresh_CX20_Base: BoltActionRifle_InnerMagazine_Base
 	{
 		scope = 0;
 		displayName = "CX20";
@@ -40,7 +40,7 @@ class cfgWeapons
 		barrelArmor = 3.125;
 		chamberSize = 5;
 		chamberedRound = "";
-		chamberableFrom[] = {"CA_Ammo_20mm"};
+		chamberableFrom[] = {"Fresh_Ammo_20mm"};
 		magazines[] = {};
 		DisplayMagazine = 0;
 		ejectType = 0;
@@ -112,7 +112,7 @@ class cfgWeapons
 			distanceZoomMax = 100;
 		};
 	};
-	class CA_CX20: CA_CX20_Base
+	class Fresh_CX20: Fresh_CX20_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\CX20\data\CX20_co.paa"};

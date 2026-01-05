@@ -9,17 +9,17 @@
 
 class CfgPatches
 {
-	class CA_GasGrenade
+	class Fresh_GasGrenade
 	{
 		requiredAddons[] = {"DZ_Data"};
-		units[] = {"CA_Grenade_Stungas"};
+		units[] = {"Fresh_Grenade_Stungas"};
 		weapons[] = {};
 	};
 };
 class CfgVehicles
 {
 	class M18SmokeGrenade_ColorBase;
-	class CA_Grenade_Stungas: M18SmokeGrenade_ColorBase
+	class Fresh_Grenade_Stungas: M18SmokeGrenade_ColorBase
 	{
 		scope = 2;
 		displayName = "Stun Grenade";

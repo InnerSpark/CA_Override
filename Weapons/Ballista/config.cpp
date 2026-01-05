@@ -12,10 +12,10 @@ class CfgPatches
 	class CA_Override_Ballista
 	{
 		units[] = {};
-		weapons[] = {"CA_Ballista408_Black","CA_Ballista408_Tan","CA_Ballista408_Green","CA_Ballista408_White"};
+		weapons[] = {"Fresh_Ballista408_Black","Fresh_Ballista408_Tan","Fresh_Ballista408_Green","Fresh_Ballista408_White"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Weapons_Magazines","DZ_Sounds_Effects"};
-		magazines[] = {"CA_Mag_Ballista408_10rnd"};
+		magazines[] = {"Fresh_Mag_Ballista408_10rnd"};
 		ammo[] = {};
 	};
 };
@@ -27,7 +27,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class BoltActionRifle_ExternalMagazine_Base;
-	class CA_Ballista_Base: BoltActionRifle_ExternalMagazine_Base
+	class Fresh_Ballista_Base: BoltActionRifle_ExternalMagazine_Base
 	{
 		scope = 0;
 		model = "CA_Override\Weapons\Ballista\ballista_new.p3d";
@@ -102,14 +102,14 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_Ballista408_Base: CA_Ballista_Base
+	class Fresh_Ballista408_Base: Fresh_Ballista_Base
 	{
 		scope = 0;
 		displayName = "FN Ballista";
 		descriptionShort = "The FN Ballista represents the future of precision rifle systems. Designed to deliver surgically precise fire, chambered for .408 CheyTac. Modelled by Vanguard";
 		attachments[] = {"weaponWrap","weaponOpticsHunting","suppressorImpro"};
 		chamberableFrom[] = {"GCGN_Ammo_408Chey","Rev_Ammo_408"};
-		magazines[] = {"CA_Mag_Ballista408_10rnd"};
+		magazines[] = {"Fresh_Mag_Ballista408_10rnd"};
 		recoilModifier[] = {1.2,1.2,1.2};
 		swayModifier[] = {2.25,2.25,1.25};
 		initSpeedMultiplier = 1.0;
@@ -122,25 +122,25 @@ class cfgWeapons
 			magazineSlot = "magazine";
 		};
 	};
-	class CA_Ballista408_Black: CA_Ballista408_Base
+	class Fresh_Ballista408_Black: Fresh_Ballista408_Base
 	{
 		scope = 2;
 		color = "Black";
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Ballista\data\ballista_black_co.paa"};
 	};
-	class CA_Ballista408_Tan: CA_Ballista408_Base
+	class Fresh_Ballista408_Tan: Fresh_Ballista408_Base
 	{
 		scope = 2;
 		color = "Tan";
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Ballista\data\ballista_tan_co.paa"};
 	};
-	class CA_Ballista408_Green: CA_Ballista408_Base
+	class Fresh_Ballista408_Green: Fresh_Ballista408_Base
 	{
 		scope = 2;
 		color = "Green";
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Ballista\data\ballista_olive_co.paa"};
 	};
-	class CA_Ballista408_White: CA_Ballista408_Base
+	class Fresh_Ballista408_White: Fresh_Ballista408_Base
 	{
 		scope = 2;
 		color = "White";
@@ -150,7 +150,7 @@ class cfgWeapons
 class cfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_Ballista408_10rnd: Magazine_Base
+	class Fresh_Mag_Ballista408_10rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "FN Ballista Magazine";

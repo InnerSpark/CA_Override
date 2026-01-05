@@ -1,4 +1,4 @@
-class CA_KORD_Base : RifleBoltFree_Base
+class Fresh_KORD_Base : RifleBoltFree_Base
 {
 	override RecoilBase SpawnRecoilObject()
 	{
@@ -32,4 +32,4 @@ class CA_KORD_Base : RifleBoltFree_Base
 	}
 };
 
-class CA_Kord : CA_KORD_Base {};
+class Fresh_Kord : Fresh_KORD_Base {};

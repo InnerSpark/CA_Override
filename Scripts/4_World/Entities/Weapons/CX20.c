@@ -1,4 +1,4 @@
-class CA_CX20_Base : BoltActionRifle_InnerMagazine_Base
+class Fresh_CX20_Base : BoltActionRifle_InnerMagazine_Base
 {
 	override RecoilBase SpawnRecoilObject()
     {

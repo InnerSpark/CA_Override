@@ -12,11 +12,11 @@ class CfgPatches
 	class CA_Override_KORD
 	{
 		units[] = {};
-		weapons[] = {"CA_Kord"};
+		weapons[] = {"Fresh_Kord"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","DZ_Weapons_Ammunition","DZ_Weapons_Magazines"};
-		magazines[] = {"CA_Mag_Kord_50rnd","CA_Ammo_127x108"};
-		ammo[] = {"CA_Bullet_127x108"};
+		magazines[] = {"Fresh_Mag_Kord_50rnd","Fresh_Ammo_127x108"};
+		ammo[] = {"Fresh_Bullet_127x108"};
 	};
 };
 class Mode_Safe;
@@ -27,7 +27,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class Rifle_Base;
-	class CA_KORD_Base: Rifle_Base
+	class Fresh_KORD_Base: Rifle_Base
 	{
 		scope = 0;
 		displayName = "6P49 Kord";
@@ -44,8 +44,8 @@ class cfgWeapons
 		initSpeedMultiplier = 1.0;
 		chamberedRound = "";
 		chamberSize = 1;
-		chamberableFrom[] = {"CA_Ammo_127x108"};
-		magazines[] = {"CA_Mag_Kord_50rnd"};
+		chamberableFrom[] = {"Fresh_Ammo_127x108"};
+		magazines[] = {"Fresh_Mag_Kord_50rnd"};
 		barrelArmor = 3000;
 		ejectType = 1;
 		recoilModifier[] = {1.8,2.2,2.3};
@@ -186,7 +186,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_Kord: CA_KORD_Base
+	class Fresh_Kord: Fresh_KORD_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\KORD\data\kord_co.paa"};
@@ -195,7 +195,7 @@ class cfgWeapons
 class CfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_Kord_50rnd: Magazine_Base
+	class Fresh_Mag_Kord_50rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "Kord Magazine";
@@ -204,8 +204,8 @@ class CfgMagazines
 		weight = 7200;
 		itemSize[] = {3,3};
 		count = 50;
-		ammo = "CA_Bullet_127x108";
-		ammoItems[] = {"CA_Ammo_127x108"};
+		ammo = "Fresh_Bullet_127x108";
+		ammoItems[] = {"Fresh_Ammo_127x108"};
 		tracersEvery = 1;
 		class DamageSystem
 		{
@@ -286,7 +286,7 @@ class CfgMagazines
 		};
 	};
 	class Ammunition_Base;
-	class CA_Ammo_127x108: Ammunition_Base
+	class Fresh_Ammo_127x108: Ammunition_Base
 	{
 		scope = 2;
 		displayName = "12.7x108mm (.51cal)";
@@ -296,7 +296,7 @@ class CfgMagazines
 		itemSize[] = {1,2};
 		weight = 10;
 		count = 100;
-		ammo = "CA_Bullet_127x108";
+		ammo = "Fresh_Bullet_127x108";
 		hiddenSelections[] = {"zbytek"};
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\KORD\data\kord_co.paa"};
 		class DamageSystem
@@ -315,12 +315,12 @@ class CfgMagazines
 class CfgAmmo
 {
 	class Bullet_Base;
-	class CA_Bullet_127x108: Bullet_Base
+	class Fresh_Bullet_127x108: Bullet_Base
 	{
 		scope = 2;
 		casing = "FxCartridge_762";
 		round = "FxRound_308Win";
-		spawnPileType = "CA_Ammo_127x108";
+		spawnPileType = "Fresh_Ammo_127x108";
 		hit = 12;
 		indirectHit = 0;
 		indirectHitRange = 0;
@@ -365,9 +365,9 @@ class CfgAmmo
 };
 class cfgAmmoTypes
 {
-	class AType_CA_Bullet_127x108
+	class AType_Fresh_Bullet_127x108
 	{
-		name = "CA_Bullet_127x108";
+		name = "Fresh_Bullet_127x108";
 	};
 };
 class CfgSoundShaders

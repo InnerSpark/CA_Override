@@ -20,8 +20,8 @@ class Revolver50CalCylinderRotate extends WeaponStateBase
 {
 	override void OnEntry (WeaponEventBase e)
 	{
-		CA_Revolver50BMG_Cylinder cylinder = CA_Revolver50BMG_Cylinder.Cast(m_weapon.GetAttachmentByType(CA_Revolver50BMG_Cylinder));
-		CA_Revolver50BMG_Ejector ejector = CA_Revolver50BMG_Ejector.Cast(m_weapon.GetAttachmentByType(CA_Revolver50BMG_Ejector));
+		Fresh_Revolver50BMG_Cylinder cylinder = Fresh_Revolver50BMG_Cylinder.Cast(m_weapon.GetAttachmentByType(Fresh_Revolver50BMG_Cylinder));
+		Fresh_Revolver50BMG_Ejector ejector = Fresh_Revolver50BMG_Ejector.Cast(m_weapon.GetAttachmentByType(Fresh_Revolver50BMG_Ejector));
 		
 		//Magnum_Base magnum = Magnum_Base.Cast(m_weapon);
 		
@@ -85,7 +85,7 @@ class WeaponChambering_MultiMuzzleRevolver50Cal extends WeaponChambering_Cartrid
 		{
 			if (m_weapon.PushCartridgeToChamber(muzzle, m_damage, m_type))
 			{
-				CA_Revolver50BMG_Cylinder cylinder = CA_Revolver50BMG_Cylinder.Cast(m_weapon.GetAttachmentByType(CA_Revolver50BMG_Cylinder));
+				Fresh_Revolver50BMG_Cylinder cylinder = Fresh_Revolver50BMG_Cylinder.Cast(m_weapon.GetAttachmentByType(Fresh_Revolver50BMG_Cylinder));
 
 				if(cylinder)
 				{
@@ -125,7 +125,7 @@ class WeaponEjectAllMuzzlesRevolver50Cal extends WeaponStateBase
 		super.OnEntry(e);
 		if (e)
 		{
-			CA_Revolver50BMG_Cylinder cylinder = CA_Revolver50BMG_Cylinder.Cast(m_weapon.GetAttachmentByType(CA_Revolver50BMG_Cylinder));
+			Fresh_Revolver50BMG_Cylinder cylinder = Fresh_Revolver50BMG_Cylinder.Cast(m_weapon.GetAttachmentByType(Fresh_Revolver50BMG_Cylinder));
 			if(cylinder)
 			{
 				cylinder.HideSelection("bullet");
@@ -568,8 +568,8 @@ class WeaponFireRevolver50Cal extends WeaponFireMultiMuzzle
 		super.OnEntry(e);
 		if (e)
 		{
-			CA_Revolver50BMG_Cylinder cylinder = CA_Revolver50BMG_Cylinder.Cast(m_weapon.GetAttachmentByType(CA_Revolver50BMG_Cylinder));
-			CA_Revolver50BMG_Ejector ejector = CA_Revolver50BMG_Ejector.Cast(m_weapon.GetAttachmentByType(CA_Revolver50BMG_Ejector));
+			Fresh_Revolver50BMG_Cylinder cylinder = Fresh_Revolver50BMG_Cylinder.Cast(m_weapon.GetAttachmentByType(Fresh_Revolver50BMG_Cylinder));
+			Fresh_Revolver50BMG_Ejector ejector = Fresh_Revolver50BMG_Ejector.Cast(m_weapon.GetAttachmentByType(Fresh_Revolver50BMG_Ejector));
 			if(cylinder && ejector)
 			{
 				float a;
@@ -625,7 +625,7 @@ class Revolver50Cal_Static_State extends WeaponStableState
 		super.OnEntry(e);
 		if (init)
 		{
-			CA_Revolver50BMG_Base magnum;
+			Fresh_Revolver50BMG_Base magnum;
 			if (CastTo(magnum, m_weapon))
 			{
 				magnum.SyncCylinderRotation();
@@ -739,7 +739,7 @@ class WeaponChargingRevolver50Cal extends WeaponStateBase
 	}
 };
 
-class CA_Revolver50BMG_Base extends Weapon_Base
+class Fresh_Revolver50BMG_Base extends Weapon_Base
 {
 	ref WeaponStateBase C;
 	int m_LastMuzzleloaded;
@@ -778,7 +778,7 @@ class CA_Revolver50BMG_Base extends Weapon_Base
         return new MagnumRecoilStanding(this);
     } */
 	
-	void CA_Revolver50BMG_Base ()
+	void Fresh_Revolver50BMG_Base ()
 	{
 		m_LastMuzzleloaded = 0;
 		m_ActiveMuzzle = 0;
@@ -897,8 +897,8 @@ class CA_Revolver50BMG_Base extends Weapon_Base
 	{
 		if ( !FindAttachmentBySlotName(ATT_SLOT_EJECTOR) && !FindAttachmentBySlotName(ATT_SLOT_CYLINDER) )
 		{
-			GetInventory().CreateAttachment("CA_Revolver50BMG_Ejector");
-			GetInventory().CreateAttachment("CA_Revolver50BMG_Cylinder");
+			GetInventory().CreateAttachment("Fresh_Revolver50BMG_Ejector");
+			GetInventory().CreateAttachment("Fresh_Revolver50BMG_Cylinder");
 		}
 
 		ForceSyncSelectionState();
@@ -912,8 +912,8 @@ class CA_Revolver50BMG_Base extends Weapon_Base
 	
 	void SetCylinderRotationAnimationPhase(float rot, bool reset = false)
 	{
-		CA_Revolver50BMG_Cylinder cylinder = CA_Revolver50BMG_Cylinder.Cast(GetAttachmentByType(CA_Revolver50BMG_Cylinder));
-		CA_Revolver50BMG_Ejector ejector = CA_Revolver50BMG_Ejector.Cast(GetAttachmentByType(CA_Revolver50BMG_Ejector));
+		Fresh_Revolver50BMG_Cylinder cylinder = Fresh_Revolver50BMG_Cylinder.Cast(GetAttachmentByType(Fresh_Revolver50BMG_Cylinder));
+		Fresh_Revolver50BMG_Ejector ejector = Fresh_Revolver50BMG_Ejector.Cast(GetAttachmentByType(Fresh_Revolver50BMG_Ejector));
 		if (cylinder && ejector)
 		{
 			float anim_phase = cylinder.GetAnimationPhase("Rotate_Cylinder");
@@ -1042,7 +1042,7 @@ class CA_Revolver50BMG_Base extends Weapon_Base
 	
 	override void OnFire(int muzzle_index)
 	{
-		CA_Revolver50BMG_Cylinder cylinder = CA_Revolver50BMG_Cylinder.Cast(GetAttachmentByType(CA_Revolver50BMG_Cylinder));
+		Fresh_Revolver50BMG_Cylinder cylinder = Fresh_Revolver50BMG_Cylinder.Cast(GetAttachmentByType(Fresh_Revolver50BMG_Cylinder));
 		if (cylinder)
 		{
 			string bullet_nose = "bullet_nose";
@@ -1071,7 +1071,7 @@ class CA_Revolver50BMG_Base extends Weapon_Base
 	{
 		super.ShowBullet(muzzleIndex);
 		
-		CA_Revolver50BMG_Cylinder cylinder = CA_Revolver50BMG_Cylinder.Cast(GetAttachmentByType(CA_Revolver50BMG_Cylinder));
+		Fresh_Revolver50BMG_Cylinder cylinder = Fresh_Revolver50BMG_Cylinder.Cast(GetAttachmentByType(Fresh_Revolver50BMG_Cylinder));
 		if (cylinder)
 		{		
 			string bullet = "bullet";
@@ -1094,7 +1094,7 @@ class CA_Revolver50BMG_Base extends Weapon_Base
 	{
 		super.HideBullet(muzzleIndex);
 		
-		CA_Revolver50BMG_Cylinder cylinder = CA_Revolver50BMG_Cylinder.Cast(GetAttachmentByType(CA_Revolver50BMG_Cylinder));
+		Fresh_Revolver50BMG_Cylinder cylinder = Fresh_Revolver50BMG_Cylinder.Cast(GetAttachmentByType(Fresh_Revolver50BMG_Cylinder));
 		if (cylinder)
 		{		
 			string bullet = "bullet";
@@ -1111,6 +1111,6 @@ class CA_Revolver50BMG_Base extends Weapon_Base
 	}
 };
 
-class CA_Revolver50BMG extends CA_Revolver50BMG_Base {};
-class CA_Revolver50BMG_Cylinder extends DummyItem {};
-class CA_Revolver50BMG_Ejector extends DummyItem {};
+class Fresh_Revolver50BMG extends Fresh_Revolver50BMG_Base {};
+class Fresh_Revolver50BMG_Cylinder extends DummyItem {};
+class Fresh_Revolver50BMG_Ejector extends DummyItem {};

@@ -9,14 +9,14 @@
 
 class CfgPatches
 {
-	class CA_RM277
+	class Fresh_RM277
 	{
 		units[] = {};
-		weapons[] = {"CA_RM277","CA_RM277_Tan"};
+		weapons[] = {"Fresh_RM277","Fresh_RM277_Tan"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Weapons_Magazines","DZ_Sounds_Effects","DZ_Weapons_Ammunition"};
-		magazines[] = {"CA_Mag_RM277_45rnd","CA_Ammo_68"};
-		ammo[] = {"CA_Bullet_68"};
+		magazines[] = {"Fresh_Mag_RM277_45rnd","Fresh_Ammo_68"};
+		ammo[] = {"Fresh_Bullet_68"};
 	};
 };
 class Mode_Safe;
@@ -27,7 +27,7 @@ class OpticsInfoRifle;
 class CfgWeapons
 {
 	class Rifle_Base;
-	class CA_RM277_Base: Rifle_Base
+	class Fresh_RM277_Base: Rifle_Base
 	{
 		scope = 0;
 		displayName = "RM-277";
@@ -47,8 +47,8 @@ class CfgWeapons
 		barrelArmor = 4.888;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"CA_Ammo_68"};
-		magazines[] = {"CA_Mag_RM277_45rnd"};
+		chamberableFrom[] = {"Fresh_Ammo_68"};
+		magazines[] = {"Fresh_Mag_RM277_45rnd"};
 		magazineSwitchTime = 0.5;
 		initSpeedMultiplier = 0.3;
 		ejectType = 1;
@@ -186,12 +186,12 @@ class CfgWeapons
 			};
 		};
 	};
-	class CA_RM277: CA_RM277_Base
+	class Fresh_RM277: Fresh_RM277_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\RM277\data\Camo1.paa","CA_Override\Weapons\RM277\data\Camo2.paa","CA_Override\Weapons\RM277\data\Camo3.paa"};
 	};
-	class CA_RM277_Tan: CA_RM277_Base
+	class Fresh_RM277_Tan: Fresh_RM277_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\RM277\data\Camo1Tan.paa","CA_Override\Weapons\RM277\data\Camo2Tan.paa","CA_Override\Weapons\RM277\data\Camo3Tan.paa"};
@@ -202,7 +202,7 @@ class cfgMagazines
 	class Magazine_Base;
 	class Ammunition_Base;
 	class Ammo_308Win;
-	class CA_Mag_RM277_45rnd: Magazine_Base
+	class Fresh_Mag_RM277_45rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "RM-277 45 Round Magazine";
@@ -211,8 +211,8 @@ class cfgMagazines
 		weight = 100;
 		itemSize[] = {1,2};
 		count = 45;
-		ammo = "CA_Bullet_68";
-		ammoItems[] = {"CA_Ammo_68"};
+		ammo = "Fresh_Bullet_68";
+		ammoItems[] = {"Fresh_Ammo_68"};
 		tracersEvery = 1;
 		class DamageSystem
 		{
@@ -226,7 +226,7 @@ class cfgMagazines
 			};
 		};
 	};
-	class CA_Ammo_68: Ammo_308Win
+	class Fresh_Ammo_68: Ammo_308Win
 	{
 		scope = 2;
 		displayName = "TrueVelocity 6.8mm Polymer";
@@ -240,20 +240,20 @@ class cfgMagazines
 };
 class cfgAmmoTypes
 {
-	class CA_68RM277
+	class Fresh_68RM277
 	{
-		name = "CA_Bullet_68";
+		name = "Fresh_Bullet_68";
 	};
 };
 class cfgAmmo
 {
 	class Bullet_Base;
-	class CA_Bullet_68: Bullet_Base
+	class Fresh_Bullet_68: Bullet_Base
 	{
 		scope = 2;
 		casing = "FxCartridge_556";
 		round = "FxRound_556";
-		spawnPileType = "CA_Ammo_68";
+		spawnPileType = "Fresh_Ammo_68";
 		hit = 12;
 		indirectHit = 0;
 		indirectHitRange = 0;

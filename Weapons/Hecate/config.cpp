@@ -12,10 +12,10 @@ class CfgPatches
 	class CA_Override_Hecate
 	{
 		units[] = {};
-		weapons[] = {"CA_Hecate"};
+		weapons[] = {"Fresh_Hecate"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Weapons_Magazines","DZ_Sounds_Effects","DZ_Weapons_Ammunition","DZ_Weapons_Projectiles"};
-		magazines[] = {"CA_Mag_Hecate_7rnd"};
+		magazines[] = {"Fresh_Mag_Hecate_7rnd"};
 		ammo[] = {};
 	};
 };
@@ -27,7 +27,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class BoltActionRifle_ExternalMagazine_Base;
-	class CA_Hecate_Base: BoltActionRifle_ExternalMagazine_Base
+	class Fresh_Hecate_Base: BoltActionRifle_ExternalMagazine_Base
 	{
 		scope = 0;
 		displayName = "PGM Hecate II";
@@ -43,8 +43,8 @@ class cfgWeapons
 		WeaponLength = 1.3;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
-		magazines[] = {"CA_Mag_Hecate_7rnd"};
+		chamberableFrom[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
+		magazines[] = {"Fresh_Mag_Hecate_7rnd"};
 		barrelArmor = 6.8;
 		ejectType = 1;
 		initSpeedMultiplier = 1.0;
@@ -116,7 +116,7 @@ class cfgWeapons
 			distanceZoomMax = 100;
 		};
 	};
-	class CA_Hecate: CA_Hecate_Base
+	class Fresh_Hecate: Fresh_Hecate_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Hecate\data\hecate_co.paa"};
@@ -125,7 +125,7 @@ class cfgWeapons
 class cfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_Hecate_7rnd: Magazine_Base
+	class Fresh_Mag_Hecate_7rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "PGM Hecate II Magazine";
@@ -135,7 +135,7 @@ class cfgMagazines
 		itemSize[] = {2,2};
 		count = 7;
 		ammo = "GCGN_Bullet_50Cal";
-		ammoItems[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
+		ammoItems[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
 		tracersEvery = 0;
 		class DamageSystem
 		{

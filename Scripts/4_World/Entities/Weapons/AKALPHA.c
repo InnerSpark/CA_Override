@@ -1,6 +1,6 @@
-class CA_AKALPHA_Base : RifleBoltFree_Base
+class Fresh_AKALPHA_Base : RifleBoltFree_Base
 {
-	void CA_AKALPHA_Base()
+	void Fresh_AKALPHA_Base()
 	{
 		UnfoldOpticsFresh(this);
 	}	
@@ -65,4 +65,4 @@ class CA_AKALPHA_Base : RifleBoltFree_Base
 	} */
 };
 
-class CA_AKALPHA : CA_AKALPHA_Base {};
+class Fresh_AKALPHA : Fresh_AKALPHA_Base {};

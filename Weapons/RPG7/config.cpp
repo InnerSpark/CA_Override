@@ -11,12 +11,12 @@ class CfgPatches
 {
 	class CA_Override_RPG7
 	{
-		units[] = {"CA_DummyRocket"};
-		weapons[] = {"CA_RPG7"};
+		units[] = {"Fresh_DummyRocket"};
+		weapons[] = {"Fresh_RPG7"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Weapons_Ammunition","DZ_Weapons_Projectiles"};
-		magazines[] = {"CA_Ammo_RPG7Grenade"};
-		ammo[] = {"CA_RPG7Rocket","FreshRocketSimulation"};
+		magazines[] = {"Fresh_Ammo_RPG7Grenade"};
+		ammo[] = {"Fresh_RPG7Rocket","FreshRocketSimulation"};
 	};
 };
 class Entity;
@@ -28,7 +28,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class Rifle_Base;
-	class CA_RPG7_Base: Rifle_Base
+	class Fresh_RPG7_Base: Rifle_Base
 	{
 		scope = 0;
 		displayName = "RPG-7";
@@ -48,7 +48,7 @@ class cfgWeapons
 		initSpeedMultiplier = 1.0;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"CA_Ammo_RPG7Grenade"};
+		chamberableFrom[] = {"Fresh_Ammo_RPG7Grenade"};
 		magazines[] = {};
 		ejectType = 1;
 		recoilModifier[] = {0.2,0.2,0.2};
@@ -145,7 +145,7 @@ class cfgWeapons
 			distanceZoomMax = 1000;
 		};
 	};
-	class CA_RPG7: CA_RPG7_Base
+	class Fresh_RPG7: Fresh_RPG7_Base
 	{
 		scope = 2;
 	};
@@ -153,7 +153,7 @@ class cfgWeapons
 class CfgMagazines
 {
 	class Ammunition_Base;
-	class CA_Ammo_RPG7Grenade: Ammunition_Base
+	class Fresh_Ammo_RPG7Grenade: Ammunition_Base
 	{
 		scope = 2;
 		displayName = "PG-7VL";
@@ -164,7 +164,7 @@ class CfgMagazines
 		itemSize[] = {4,1};
 		weight = 3000;
 		count = 1;
-		ammo = "CA_RPG7Rocket";
+		ammo = "Fresh_RPG7Rocket";
 		class DamageSystem
 		{
 			class GlobalHealth
@@ -181,12 +181,12 @@ class CfgMagazines
 class cfgAmmo
 {
 	class Bullet_Base;
-	class CA_RPG7Rocket: Bullet_Base
+	class Fresh_RPG7Rocket: Bullet_Base
 	{
 		scope = 2;
 		model = "CA_Override\Weapons\RPG7\rocket_flying.p3d";
 		proxyShape = "CA_Override\Weapons\RPG7\rocket_flying.p3d";
-		spawnPileType = "CA_Ammo_RPG7Grenade";
+		spawnPileType = "Fresh_Ammo_RPG7Grenade";
 		SimulationScriptClass = "FreshRocketSimulation";
 		simulation = "shotIlluminating";
 		simulationStep = 0.05;
@@ -256,7 +256,7 @@ class cfgAmmo
 class CfgVehicles
 {
 	class Inventory_Base;
-	class CA_DummyRocket: Inventory_Base
+	class Fresh_DummyRocket: Inventory_Base
 	{
 		scope = 2;
 		weight = 1;
@@ -265,9 +265,9 @@ class CfgVehicles
 };
 class cfgAmmoTypes
 {
-	class AType_CA_RPG7Rocket
+	class AType_Fresh_RPG7Rocket
 	{
-		name = "CA_RPG7Rocket";
+		name = "Fresh_RPG7Rocket";
 	};
 };
 class CfgSoundShaders

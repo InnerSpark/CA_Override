@@ -1,6 +1,6 @@
-class CA_RPG7_Base extends Rifle_Base
+class Fresh_RPG7_Base extends Rifle_Base
 {
-	void CA_RPG7_Base()
+	void Fresh_RPG7_Base()
 	{	
 		UnfoldOpticsFresh(this);	
 		GetGame().GetCallQueue(CALL_CATEGORY_GAMEPLAY).Call(ShowRocket);
@@ -219,10 +219,10 @@ class CA_RPG7_Base extends Rifle_Base
 	{
 		if (!FindAttachmentBySlotName("RPG7Rocket"))
 		{
-			GetInventory().CreateAttachment("CA_DummyRocket");
+			GetInventory().CreateAttachment("Fresh_DummyRocket");
 		}
 
-		CA_DummyRocket rocket = CA_DummyRocket.Cast(GetAttachmentByType(CA_DummyRocket));
+		Fresh_DummyRocket rocket = Fresh_DummyRocket.Cast(GetAttachmentByType(Fresh_DummyRocket));
 		if (!rocket)
 			return;
 
@@ -248,7 +248,7 @@ modded class WeaponFireLast
 	override void OnExit(WeaponEventBase e)
 	{
 		super.OnExit(e);
-		if (m_weapon && m_weapon.IsInherited(CA_RPG7_Base))
+		if (m_weapon && m_weapon.IsInherited(Fresh_RPG7_Base))
 			m_weapon.OnFire(m_weapon.GetCurrentMuzzle());
 	}
 };
@@ -258,13 +258,13 @@ modded class WeaponFireAndChamberNext
 	override void OnExit(WeaponEventBase e)
 	{
 		super.OnExit(e);
-		if (m_weapon && m_weapon.IsInherited(CA_RPG7_Base))
+		if (m_weapon && m_weapon.IsInherited(Fresh_RPG7_Base))
 			m_weapon.OnFire(m_weapon.GetCurrentMuzzle());
 	}
 };
 
-class CA_RPG7 extends CA_RPG7_Base {};
-class CA_DummyRocket extends DummyItem {};
+class Fresh_RPG7 extends Fresh_RPG7_Base {};
+class Fresh_DummyRocket extends DummyItem {};
 
 class FreshRocketSimulation: Managed
 {
@@ -318,16 +318,16 @@ modded class FirearmActionLoadBullet
 	{
 		super.OnEndClient(action_data);
 		Print(action_data.m_MainItem);
-		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(CA_RPG7_Base))
-			CA_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
+		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(Fresh_RPG7_Base))
+			Fresh_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
 	}
 	
 	override void OnEndServer(ActionData action_data)
 	{
 		super.OnEndServer(action_data);
 		Print(action_data.m_MainItem);
-		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(CA_RPG7_Base))
-			CA_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
+		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(Fresh_RPG7_Base))
+			Fresh_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
 	}
 };
 
@@ -338,16 +338,16 @@ modded class FirearmActionLoadBulletQuick
 		super.OnEndClient(action_data);
 
 		Print(action_data.m_MainItem);
-		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(CA_RPG7_Base))
-			CA_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
+		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(Fresh_RPG7_Base))
+			Fresh_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
 	}
 	
 	override void OnEndServer(ActionData action_data)
 	{
 		super.OnEndServer(action_data);
 		Print(action_data.m_MainItem);
-		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(CA_RPG7_Base))
-			CA_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
+		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(Fresh_RPG7_Base))
+			Fresh_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
 	}
 };
 
@@ -356,14 +356,14 @@ modded class FirearmActionLoadMultiBulletQuick
 	override void OnEndClient(ActionData action_data)
 	{
 		super.OnEndClient(action_data);
-		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(CA_RPG7_Base))
-			CA_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
+		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(Fresh_RPG7_Base))
+			Fresh_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
 	}
 	
 	override void OnEndServer(ActionData action_data)
 	{
 		super.OnEndServer(action_data);
-		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(CA_RPG7_Base))
-			CA_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
+		if (action_data.m_MainItem && action_data.m_MainItem.IsInherited(Fresh_RPG7_Base))
+			Fresh_RPG7_Base.Cast(action_data.m_MainItem).ShowRocket();
 	}
 };

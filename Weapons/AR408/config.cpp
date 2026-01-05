@@ -12,10 +12,10 @@ class CfgPatches
 	class CA_Override_AR408
 	{
 		units[] = {};
-		weapons[] = {"CA_AR408","CA_AR50BMG"};
+		weapons[] = {"Fresh_AR408","Fresh_AR50BMG"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Sounds_Effects","DZ_Weapons_Magazines","DZ_Weapons_Muzzles"};
-		magazines[] = {"CA_Mag_AR408_10rnd","CA_Mag_AR50BMG_10rnd","CA_Mag_AR408_20rnd","CA_Mag_AR50BMG_20rnd","CA_Mag_AR408_30rnd","CA_Mag_AR50BMG_30rnd"};
+		magazines[] = {"Fresh_Mag_AR408_10rnd","Fresh_Mag_AR50BMG_10rnd","Fresh_Mag_AR408_20rnd","Fresh_Mag_AR50BMG_20rnd","Fresh_Mag_AR408_30rnd","Fresh_Mag_AR50BMG_30rnd"};
 	};
 };
 class Mode_Safe;
@@ -26,7 +26,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class Rifle_Base;
-	class CA_AR408_Base: Rifle_Base
+	class Fresh_AR408_Base: Rifle_Base
 	{
 		scope = 0;
 		displayName = "AR-408";
@@ -44,7 +44,7 @@ class cfgWeapons
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"GCGN_Ammo_408Chey","Rev_Ammo_408"};
-		magazines[] = {"CA_Mag_AR408_10rnd","CA_Mag_AR408_20rnd","CA_Mag_AR408_30rnd"};
+		magazines[] = {"Fresh_Mag_AR408_10rnd","Fresh_Mag_AR408_20rnd","Fresh_Mag_AR408_30rnd"};
 		ejectType = 1;
 		initSpeedMultiplier = 1.0;
 		recoilModifier[] = {3.8,3.9,4.0};
@@ -151,25 +151,25 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_AR408: CA_AR408_Base
+	class Fresh_AR408: Fresh_AR408_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\AR408\data\rifle_co.paa"};
 	};
-	class CA_AR50BMG: CA_AR408_Base
+	class Fresh_AR50BMG: Fresh_AR408_Base
 	{
 		scope = 2;
 		displayName = "AR .50";
 		descriptionShort = "Semi-automatic rifle based on AR-15 platform. Fed from detachable magazines, chambered for .50BMG";
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\AR408\data\rifle_co.paa"};
-		chamberableFrom[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
-		magazines[] = {"CA_Mag_AR50BMG_10rnd","CA_Mag_AR50BMG_20rnd","CA_Mag_AR50BMG_30rnd"};
+		chamberableFrom[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
+		magazines[] = {"Fresh_Mag_AR50BMG_10rnd","Fresh_Mag_AR50BMG_20rnd","Fresh_Mag_AR50BMG_30rnd"};
 	};
 };
 class cfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_AR408_10rnd: Magazine_Base
+	class Fresh_Mag_AR408_10rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "AR-408 Magazine";
@@ -259,14 +259,14 @@ class cfgMagazines
 			};
 		};
 	};
-	class CA_Mag_AR50BMG_10rnd: CA_Mag_AR408_10rnd
+	class Fresh_Mag_AR50BMG_10rnd: Fresh_Mag_AR408_10rnd
 	{
 		displayName = "AR .50 Magazine";
 		descriptionShort = "Detachable box magazine for AR .50 rifle. Holds up to 10 rounds of .50BMG.";
 		ammo = "GCGN_Bullet_50Cal";
-		ammoItems[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
+		ammoItems[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
 	};
-	class CA_Mag_AR408_20rnd: Magazine_Base
+	class Fresh_Mag_AR408_20rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "AR-408 Magazine (extended)";
@@ -356,14 +356,14 @@ class cfgMagazines
 			};
 		};
 	};
-	class CA_Mag_AR50BMG_20rnd: CA_Mag_AR408_20rnd
+	class Fresh_Mag_AR50BMG_20rnd: Fresh_Mag_AR408_20rnd
 	{
 		displayName = "AR .50 Magazine (extended)";
 		descriptionShort = "Detachable box magazine for AR .50 rifle. Holds up to 20 rounds of .50BMG.";
-		ammo = "CA_Bullet_50BMG";
-		ammoItems[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
+		ammo = "Fresh_Bullet_50BMG";
+		ammoItems[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
 	};
-	class CA_Mag_AR408_30rnd: Magazine_Base
+	class Fresh_Mag_AR408_30rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "AR-408 Magazine (madness)";
@@ -453,12 +453,12 @@ class cfgMagazines
 			};
 		};
 	};
-	class CA_Mag_AR50BMG_30rnd: CA_Mag_AR408_30rnd
+	class Fresh_Mag_AR50BMG_30rnd: Fresh_Mag_AR408_30rnd
 	{
 		displayName = "AR ,50 Magazine (madness)";
 		descriptionShort = "Detachable box magazine for AR .50 rifle. Holds up to 30 rounds of .50BMG.";
-		ammo = "CA_Bullet_50BMG";
-		ammoItems[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
+		ammo = "Fresh_Bullet_50BMG";
+		ammoItems[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG"};
 	};
 };
 class CfgNonAIVehicles

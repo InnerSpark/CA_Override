@@ -9,10 +9,10 @@
 
 class CfgPatches
 {
-	class CA_AR50
+	class Fresh_AR50
 	{
 		units[] = {};
-		weapons[] = {"CA_AR50_Black","CA_AR50_Colourful","CA_AR50_Warning","CA_AR50_Weed"};
+		weapons[] = {"Fresh_AR50_Black","Fresh_AR50_Colourful","Fresh_AR50_Warning","Fresh_AR50_Weed"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Data","DZ_Weapons_Firearms","DZ_Weapons_Ammunition","DZ_Weapons_Magazines"};
 		ammo[] = {};
@@ -23,7 +23,7 @@ class Mode_SemiAuto;
 class CfgWeapons
 {
 	class BoltActionRifle_InnerMagazine_Base;
-	class CA_AR50_base: BoltActionRifle_InnerMagazine_Base
+	class Fresh_AR50_base: BoltActionRifle_InnerMagazine_Base
 	{
 		scope = 0;
 		displayName = "AR50";
@@ -46,7 +46,7 @@ class CfgWeapons
 		chamberSize = 5;
 		chamberedRound = "";
 		DisplayMagazine = 0;
-		chamberableFrom[] = {"CA_Ammo_20mm"};
+		chamberableFrom[] = {"Fresh_Ammo_20mm"};
 		hiddenSelections[] = {"camo","camo_muzzle"};
 		magazines[] = {};
 		magazineSwitchTime = 0.38;
@@ -73,7 +73,7 @@ class CfgWeapons
 				class Health
 				{
 					hitpoints = 5000;
-					healthLevels[] = {{1.0,{"CA_Override\Weapons\AR50\data\CA_AR50.rvmat","CA_Override\Weapons\AR50\data\CA_AR50_Muzzle.rvmat"}},{0.7,{"CA_Override\Weapons\AR50\data\CA_AR50.rvmat","CA_Override\Weapons\AR50\data\CA_AR50_Muzzle.rvmat"}},{0.5,{"CA_Override\Weapons\AR50\data\CA_AR50_damage.rvmat","CA_Override\Weapons\AR50\data\CA_AR50_Muzzle_damage.rvmat"}},{0.3,{"CA_Override\Weapons\AR50\data\CA_AR50_damage.rvmat","CA_Override\Weapons\AR50\data\CA_AR50_Muzzle_damage.rvmat"}},{0.0,{"CA_Override\Weapons\AR50\data\CA_AR50_destruct.rvmat","CA_Override\Weapons\AR50\data\CA_AR50_Muzzle_destruct.rvmat"}}};
+					healthLevels[] = {{1.0,{"CA_Override\Weapons\AR50\data\Fresh_AR50.rvmat","CA_Override\Weapons\AR50\data\Fresh_AR50_Muzzle.rvmat"}},{0.7,{"CA_Override\Weapons\AR50\data\Fresh_AR50.rvmat","CA_Override\Weapons\AR50\data\Fresh_AR50_Muzzle.rvmat"}},{0.5,{"CA_Override\Weapons\AR50\data\Fresh_AR50_damage.rvmat","CA_Override\Weapons\AR50\data\Fresh_AR50_Muzzle_damage.rvmat"}},{0.3,{"CA_Override\Weapons\AR50\data\Fresh_AR50_damage.rvmat","CA_Override\Weapons\AR50\data\Fresh_AR50_Muzzle_damage.rvmat"}},{0.0,{"CA_Override\Weapons\AR50\data\Fresh_AR50_destruct.rvmat","CA_Override\Weapons\AR50\data\Fresh_AR50_Muzzle_destruct.rvmat"}}};
 				};
 			};
 		};
@@ -118,29 +118,29 @@ class CfgWeapons
 			type = "shot";
 		};
 	};
-	class CA_AR50_Black: CA_AR50_base
+	class Fresh_AR50_Black: Fresh_AR50_base
 	{
 		scope = 2;
 		displayName = "AR50";
-		hiddenSelectionsTextures[] = {"CA_Override\Weapons\AR50\data\CA_AR50_co.paa","CA_Override\Weapons\AR50\data\CA_AR50_Muzzle_co.paa"};
+		hiddenSelectionsTextures[] = {"CA_Override\Weapons\AR50\data\Fresh_AR50_co.paa","CA_Override\Weapons\AR50\data\Fresh_AR50_Muzzle_co.paa"};
 	};
-	class CA_AR50_Colourful: CA_AR50_base
+	class Fresh_AR50_Colourful: Fresh_AR50_base
 	{
 		scope = 2;
 		displayName = "AR50";
-		hiddenSelectionsTextures[] = {"CA_Override\Weapons\AR50\data\ar50_body_colourful.paa","CA_Override\Weapons\AR50\data\CA_AR50_Muzzle_co.paa"};
+		hiddenSelectionsTextures[] = {"CA_Override\Weapons\AR50\data\ar50_body_colourful.paa","CA_Override\Weapons\AR50\data\Fresh_AR50_Muzzle_co.paa"};
 	};
-	class CA_AR50_Warning: CA_AR50_base
+	class Fresh_AR50_Warning: Fresh_AR50_base
 	{
 		scope = 2;
 		displayName = "AR50";
-		hiddenSelectionsTextures[] = {"CA_Override\Weapons\AR50\data\ar50_body_warning.paa","CA_Override\Weapons\AR50\data\CA_AR50_Muzzle_co.paa"};
+		hiddenSelectionsTextures[] = {"CA_Override\Weapons\AR50\data\ar50_body_warning.paa","CA_Override\Weapons\AR50\data\Fresh_AR50_Muzzle_co.paa"};
 	};
-	class CA_AR50_Weed: CA_AR50_base
+	class Fresh_AR50_Weed: Fresh_AR50_base
 	{
 		scope = 2;
 		displayName = "AR50";
-		hiddenSelectionsTextures[] = {"CA_Override\Weapons\AR50\data\ar50_body_weed.paa","CA_Override\Weapons\AR50\data\CA_AR50_Muzzle_co.paa"};
+		hiddenSelectionsTextures[] = {"CA_Override\Weapons\AR50\data\ar50_body_weed.paa","CA_Override\Weapons\AR50\data\Fresh_AR50_Muzzle_co.paa"};
 	};
 };
 class CfgSoundShaders

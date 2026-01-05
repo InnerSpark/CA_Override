@@ -6,16 +6,7 @@ class CfgPatches
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]={
-			"DZ_Scripts",
-			"DZ_Data",
-			"DZ_Weapons_Optics",
-			"DZ_Gear_Containers",
-			"DZ_Weapons_Lights",
-			"CfgVehicles",
-			"CfgWeapons",
-			"CfgMagazines",
-			"CfgNonAIVehicles",
-			"JPC_Vest"
+			"DZ_Data"
 		};
 	};
 };
@@ -33,7 +24,7 @@ class CfgMods
 		credits="SicarioSpark";
 		author="SicarioSpark";
 		authorID="";
-		version="0.2";
+		version="0.11";
 		extra=0;
 		type="mod";
 		dependencies[] = {"Game","World","Mission"};
@@ -56,30 +47,5 @@ class CfgMods
 			files[] = {"CA_Override/scripts/5_Mission"};
 		};
 	};
-};
-
-// =============================================
-// EMPTY PLACEHOLDER CLASSES
-// These stop binarizer errors (CfgNonAIVehicles, CfgWeapons, CfgMagazines)
-// They do NOTHING in-game — safe and standard practice
-// =============================================
-class CfgNonAIVehicles
-{
-};
-
-class CfgWeapons
-{
-};
-
-class CfgMagazines
-{
-};
-
-class CfgSlots
-{
-};
-
-// Optional: If you get CfgVehicles complaints too
-class CfgVehicles
-{
+	};
 };

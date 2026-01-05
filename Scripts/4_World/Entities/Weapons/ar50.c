@@ -1,4 +1,4 @@
-class CA_AR50_base extends BoltActionRifle_InnerMagazine_Base
+class Fresh_AR50_base extends BoltActionRifle_InnerMagazine_Base
 {
 	override RecoilBase SpawnRecoilObject()
 	{
@@ -53,4 +53,4 @@ class CA_AR50_base extends BoltActionRifle_InnerMagazine_Base
 		return true;
 	}	
 };
-class CA_AR50_Black: CA_AR50_base{};
+class Fresh_AR50_Black: Fresh_AR50_base{};

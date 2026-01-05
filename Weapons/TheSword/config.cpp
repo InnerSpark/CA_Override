@@ -9,9 +9,9 @@
 
 class CfgPatches
 {
-	class CA_TheSword
+	class Fresh_TheSword
 	{
-		units[] = {"CA_BeaverBasher","CA_AdminBasher"};
+		units[] = {"Fresh_BeaverBasher","Fresh_AdminBasher"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Melee"};
@@ -114,11 +114,11 @@ class CfgVehicles
 			};
 		};
 	};
-	class CA_BeaverBasher: TheSword_Base
+	class Fresh_BeaverBasher: TheSword_Base
 	{
 		scope = 2;
 	};
-	class CA_AdminBasher_Base: Inventory_Base
+	class Fresh_AdminBasher_Base: Inventory_Base
 	{
 		scope = 0;
 		displayName = "Admin Basher";
@@ -219,7 +219,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class CA_AdminBasher: CA_AdminBasher_Base
+	class Fresh_AdminBasher: Fresh_AdminBasher_Base
 	{
 		scope = 2;
 	};

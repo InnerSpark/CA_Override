@@ -12,10 +12,10 @@ class CfgPatches
 	class CA_Override_PKM
 	{
 		units[] = {};
-		weapons[] = {"CA_PKM","CA_PKM_DragonBreath","CA_PKM_Toxic","CA_PKM_Volcano","CA_PKM_TigerStripe"};
+		weapons[] = {"Fresh_PKM","Fresh_PKM_DragonBreath","Fresh_PKM_Toxic","Fresh_PKM_Volcano","Fresh_PKM_TigerStripe"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Weapons_Magazines","DZ_Sounds_Effects"};
-		magazines[] = {"CA_Mag_PKM_250rnd","CA_Mag_PKM_Volcano_250rnd","CA_Mag_PKM_TigerStripe_250rnd"};
+		magazines[] = {"Fresh_Mag_PKM_250rnd","Fresh_Mag_PKM_Volcano_250rnd","Fresh_Mag_PKM_TigerStripe_250rnd"};
 	};
 };
 class Mode_Safe;
@@ -26,7 +26,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class Rifle_Base;
-	class CA_PKM_Base: Rifle_Base
+	class Fresh_PKM_Base: Rifle_Base
 	{
 		scope = 0;
 		displayName = "PKM";
@@ -44,7 +44,7 @@ class cfgWeapons
 		chamberSize = 1;
 		chamberedRound = "";
 		chamberableFrom[] = {"Ammo_762x54","Ammo_762x54Tracer"};
-		magazines[] = {"CA_Mag_PKM_250rnd","CA_Mag_PKM_Volcano_250rnd","CA_Mag_PKM_TigerStripe_250rnd","Snafu_PKP_250RND_Mag"};
+		magazines[] = {"Fresh_Mag_PKM_250rnd","Fresh_Mag_PKM_Volcano_250rnd","Fresh_Mag_PKM_TigerStripe_250rnd","Snafu_PKP_250RND_Mag"};
 		ejectType = 1;
 		initSpeedMultiplier = 1.0;
 		recoilModifier[] = {0.6,0.8,0.8};
@@ -157,23 +157,23 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_PKM: CA_PKM_Base
+	class Fresh_PKM: Fresh_PKM_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\PKM\data\pkm_co.paa"};
 	};
-	class CA_PKM_DragonBreath: CA_PKM_Base
+	class Fresh_PKM_DragonBreath: Fresh_PKM_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\PKM\data\pkm_dragonbreath_co.paa"};
 	};
-	class CA_PKM_Toxic: CA_PKM_Base
+	class Fresh_PKM_Toxic: Fresh_PKM_Base
 	{
 		scope = 2;
 		displayName = "Toxic PKM";
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\PKM\data\pkm_toxic_co.paa"};
 	};
-	class CA_PKM_Volcano: CA_PKM_Base
+	class Fresh_PKM_Volcano: Fresh_PKM_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\PKM\data\pkm_volcano_co.paa"};
@@ -190,7 +190,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_PKM_TigerStripe: CA_PKM_Base
+	class Fresh_PKM_TigerStripe: Fresh_PKM_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\PKM\data\pkm_tigerstripe_co.paa"};
@@ -211,7 +211,7 @@ class cfgWeapons
 class cfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_PKM_250rnd: Magazine_Base
+	class Fresh_Mag_PKM_250rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "PKM Ammunition Belt";
@@ -301,7 +301,7 @@ class cfgMagazines
 			};
 		};
 	};
-	class CA_Mag_PKM_Volcano_250rnd: CA_Mag_PKM_250rnd
+	class Fresh_Mag_PKM_Volcano_250rnd: Fresh_Mag_PKM_250rnd
 	{
 		scope = 2;
 		hiddenSelections[] = {"magazine"};
@@ -319,7 +319,7 @@ class cfgMagazines
 			};
 		};
 	};
-	class CA_Mag_PKM_TigerStripe_250rnd: CA_Mag_PKM_250rnd
+	class Fresh_Mag_PKM_TigerStripe_250rnd: Fresh_Mag_PKM_250rnd
 	{
 		scope = 2;
 		hiddenSelections[] = {"magazine"};

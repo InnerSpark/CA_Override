@@ -1,4 +1,4 @@
-class CA_Medical_Grizzly: MedKitBase
+class Fresh_Medical_Grizzly: MedKitBase
 {
 		
 	override void OnApply(PlayerBase player)

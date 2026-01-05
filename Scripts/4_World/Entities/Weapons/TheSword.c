@@ -21,9 +21,9 @@ class TheSword_Base extends ToolBase
 	}
 }
 
-class CA_AdminBasher_Base extends ToolBase
+class Fresh_AdminBasher_Base extends ToolBase
 {
-	void CA_AdminBasher_Base()
+	void Fresh_AdminBasher_Base()
 	{
 	}
 

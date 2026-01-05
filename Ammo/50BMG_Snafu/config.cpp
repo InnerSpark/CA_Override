@@ -9,9 +9,9 @@
 
 class CfgPatches
 {
-	class CA_AmmoBox_SNAFU_50BMG
+	class Fresh_AmmoBox_SNAFU_50BMG
 	{
-		units[] = {"CA_AmmoBox_SNAFU_50BMG_10Rnd"};
+		units[] = {"Fresh_AmmoBox_SNAFU_50BMG_10Rnd"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Ammunition","SNAFU_Ammo_Master"};
@@ -20,7 +20,7 @@ class CfgPatches
 class CfgVehicles
 {
 	class Box_Base;
-	class CA_AmmoBox_SNAFU_50BMG_10Rnd: Box_Base
+	class Fresh_AmmoBox_SNAFU_50BMG_10Rnd: Box_Base
 	{
 		scope = 2;
 		displayName = "SNAFU 50BMG AmmoBox";

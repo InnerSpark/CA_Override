@@ -12,10 +12,10 @@ class CfgPatches
 	class CA_Override_Tac50
 	{
 		units[] = {};
-		weapons[] = {"CA_Tac50_Tan","CA_Tac50_Green","CA_Tac50_Black","CA_Tac50_Camo","CA_Tac50_Obsidian"};
+		weapons[] = {"Fresh_Tac50_Tan","Fresh_Tac50_Green","Fresh_Tac50_Black","Fresh_Tac50_Camo","Fresh_Tac50_Obsidian"};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Weapons_Firearms","DZ_Weapons_Magazines"};
-		magazines[] = {"CA_Mag_Tac50_5rnd"};
+		magazines[] = {"Fresh_Mag_Tac50_5rnd"};
 		ammo[] = {};
 	};
 };
@@ -27,7 +27,7 @@ class OpticsInfoRifle;
 class cfgWeapons
 {
 	class BoltActionRifle_ExternalMagazine_Base;
-	class CA_Tac50_Base: BoltActionRifle_ExternalMagazine_Base
+	class Fresh_Tac50_Base: BoltActionRifle_ExternalMagazine_Base
 	{
 		scope = 0;
 		displayName = "Tac-50";
@@ -43,8 +43,8 @@ class cfgWeapons
 		WeaponLength = 1.07;
 		chamberSize = 1;
 		chamberedRound = "";
-		chamberableFrom[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG","Rev_Ammo_50BMG"};
-		magazines[] = {"CA_Mag_Tac50_5rnd"};
+		chamberableFrom[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG","Rev_Ammo_50BMG"};
+		magazines[] = {"Fresh_Mag_Tac50_5rnd"};
 		barrelArmor = 3.125;
 		ejectType = 0;
 		initSpeedMultiplier = 1.0;
@@ -193,27 +193,27 @@ class cfgWeapons
 			};
 		};
 	};
-	class CA_Tac50_Tan: CA_Tac50_Base
+	class Fresh_Tac50_Tan: Fresh_Tac50_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Tac50\data\tac50_tan_co.paa"};
 	};
-	class CA_Tac50_Green: CA_Tac50_Base
+	class Fresh_Tac50_Green: Fresh_Tac50_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Tac50\data\tac50_green_co.paa"};
 	};
-	class CA_Tac50_Black: CA_Tac50_Base
+	class Fresh_Tac50_Black: Fresh_Tac50_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Tac50\data\tac50_black_co.paa"};
 	};
-	class CA_Tac50_Camo: CA_Tac50_Base
+	class Fresh_Tac50_Camo: Fresh_Tac50_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Tac50\data\tac50_camo_co.paa"};
 	};
-	class CA_Tac50_Obsidian: CA_Tac50_Base
+	class Fresh_Tac50_Obsidian: Fresh_Tac50_Base
 	{
 		scope = 2;
 		hiddenSelectionsTextures[] = {"CA_Override\Weapons\Tac50\data\tac50_obsidian_co.paa"};
@@ -222,7 +222,7 @@ class cfgWeapons
 class cfgMagazines
 {
 	class Magazine_Base;
-	class CA_Mag_Tac50_5rnd: Magazine_Base
+	class Fresh_Mag_Tac50_5rnd: Magazine_Base
 	{
 		scope = 2;
 		displayName = "Tac-50 Magazine";
@@ -232,7 +232,7 @@ class cfgMagazines
 		itemSize[] = {3,2};
 		count = 5;
 		ammo = "GCGN_Bullet_50Cal";
-		ammoItems[] = {"CA_Ammo_50BMG","CA_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG","Rev_Ammo_50BMG"};
+		ammoItems[] = {"Fresh_Ammo_50BMG","Fresh_Ammo_50BMG_AP","GCGN_Ammo_50Cal","TTC_Ammo_50BMG","Rev_Ammo_50BMG"};
 		tracersEvery = 0;
 		class DamageSystem
 		{
