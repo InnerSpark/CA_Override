@@ -1,0 +1,1 @@
+class CA_Venom_Grenade extends RGD5Grenade {};

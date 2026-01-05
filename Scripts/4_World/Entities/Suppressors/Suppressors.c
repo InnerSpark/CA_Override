@@ -1,0 +1,1 @@
+class CBM_M82A2_Base_Suppressor extends SuppressorBase {};

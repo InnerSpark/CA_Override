@@ -1,0 +1,1 @@
+class CA_Optics_Vortex_X6 extends ItemOptics{};

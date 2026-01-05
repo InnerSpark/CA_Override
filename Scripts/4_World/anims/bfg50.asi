@@ -1,0 +1,21 @@
+$animsetinstance {
+ #template "DZ/anims/workspaces/player/player_main/player_main.ast"
+ #nparents 1
+ #parent "DZ/anims/workspaces/player/player_main/player_main_rifle.asi"
+ $animations {
+   "WeaponOperations.ErcRas.Chambering_Closed" "CA_Override/Scripts/4_World/anims/bfg50/p_erc_chambering_in_bfg50.anm" 
+   "WeaponOperations.ErcRas.Chambering_Open" "CA_Override/Scripts/4_World/anims/bfg50/p_erc_chambering_out_bfg50.anm"
+   "WeaponOperations.ErcRas.Fire" "CA_Override/Scripts/4_World/anims/bfg50/p_erc_fire_bfg50_ras.anm" 
+   "WeaponOperations.ErcRas.FireCocked" "CA_Override/Scripts/4_World/anims/bfg50/p_erc_fire_empty_bfg50_ras.anm"
+   "WeaponOperations.ErcRas.FireEmptyAutomatic" "CA_Override/Scripts/4_World/anims/bfg50/p_erc_fire_empty_bfg50_ras.anm"
+   "WeaponOperations.ErcRas.ReloadAction_Closed" "CA_Override/Scripts/4_World/anims/bfg50/p_erc_reload_action_out_bfg50_ras.anm"
+   "WeaponOperations.ErcRas.ReloadAction_Open" "CA_Override/Scripts/4_World/anims/bfg50/p_erc_reload_action_bfg50_ras.anm"
+   "WeaponOperations.PneRas.Chambering_Closed" "CA_Override/Scripts/4_World/anims/bfg50/p_pne_chambering_in_bfg49.anm"
+   "WeaponOperations.PneRas.Chambering_Open" "CA_Override/Scripts/4_World/anims/bfg50/p_pne_chambering_out_bfg49.anm"
+   "WeaponOperations.PneRas.Fire" "CA_Override/Scripts/4_World/anims/bfg50/p_pne_fire_bfg49_ras.anm"
+   "WeaponOperations.PneRas.FireCocked" "CA_Override/Scripts/4_World/anims/bfg50/p_pne_fire_empty_bfg49_ras.anm"
+   "WeaponOperations.PneRas.FireEmptyAutomatic" "CA_Override/Scripts/4_World/anims/bfg50/p_pne_fire_empty_bfg49_ras.anm"
+   "WeaponOperations.PneRas.ReloadAction_Closed" "CA_Override/Scripts/4_World/anims/bfg50/p_pne_reload_action_out_bfg49_ras.anm"
+   "WeaponOperations.PneRas.ReloadAction_Open" "CA_Override/Scripts/4_World/anims/bfg50/p_pne_reload_action_bfg49_ras.anm"
+  
+ }
