@@ -51,30 +51,10 @@ class CfgVehicles
             };
             class GlobalArmor
             {
-                class Projectile
-                {
-                    class Health { damage = 0.08; };
-                    class Blood  { damage = 0.00; }; // No bleed through plates
-                    class Shock  { damage = 0.20; };
-                };
-                class Melee
-                {
-                    class Health { damage = 0.25; };
-                    class Blood  { damage = 0.00; };
-                    class Shock  { damage = 0.25; };
-                };
-                class Infected
-                {
-                    class Health { damage = 0.25; };
-                    class Blood  { damage = 0.00; };
-                    class Shock  { damage = 0.25; };
-                };
-                class FragGrenade
-                {
-                    class Health { damage = 0.50; };
-                    class Blood  { damage = 0.00; };
-                    class Shock  { damage = 0.26; };
-                };
+                class Projectile { class Health { damage = 0.08; }; class Blood  { damage = 0.00; }; class Shock  { damage = 0.20; }; };
+                class Melee { class Health { damage = 0.25; }; class Blood  { damage = 0.00; }; class Shock  { damage = 0.25; }; };
+                class Infected { class Health { damage = 0.25; }; class Blood  { damage = 0.00; }; class Shock  { damage = 0.25; }; };
+                class FragGrenade { class Health { damage = 0.50; }; class Blood  { damage = 0.00; }; class Shock  { damage = 0.26; }; };
             };
         };
     };
@@ -95,30 +75,10 @@ class CfgVehicles
             };
             class GlobalArmor
             {
-                class Projectile
-                {
-                    class Health { damage = 0.08; };
-                    class Blood  { damage = 0.00; };
-                    class Shock  { damage = 0.10; };
-                };
-                class Melee
-                {
-                    class Health { damage = 0.25; };
-                    class Blood  { damage = 0.00; };
-                    class Shock  { damage = 0.25; };
-                };
-                class Infected
-                {
-                    class Health { damage = 0.25; };
-                    class Blood  { damage = 0.00; };
-                    class Shock  { damage = 0.25; };
-                };
-                class FragGrenade
-                {
-                    class Health { damage = 0.50; };
-                    class Blood  { damage = 0.00; };
-                    class Shock  { damage = 0.26; };
-                };
+                class Projectile {  class Health { damage = 0.08; }; class Blood  { damage = 0.00; }; class Shock  { damage = 0.10; }; };
+                class Melee { class Health { damage = 0.25; }; class Blood  { damage = 0.00; }; class Shock  { damage = 0.25; }; };
+                class Infected { class Health { damage = 0.25; }; class Blood  { damage = 0.00; }; class Shock  { damage = 0.25; }; };
+                class FragGrenade  { class Health { damage = 0.50; }; class Blood  { damage = 0.00; }; class Shock  { damage = 0.26; }; };
             };
         };
     };
@@ -177,12 +137,7 @@ class CfgVehicles
             };
             class GlobalArmor
             {
-                class Projectile
-                {
-                    class Health { damage = 0.03; };
-                    class Blood  { damage = 0.00; };
-                    class Shock  { damage = 0.00; };
-                };
+                class Projectile { class Health { damage = 0.03; }; class Blood  { damage = 0.00; }; class Shock  { damage = 0.00; }; };
                 class Melee    { class Health { damage = 0.25; }; class Blood { damage = 0.00; }; class Shock { damage = 0.25; }; };
                 class Infected { class Health { damage = 0.25; }; class Blood { damage = 0.00; }; class Shock { damage = 0.25; }; };
                 class FragGrenade { class Health { damage = 0.50; }; class Blood { damage = 0.00; }; class Shock { damage = 0.26; }; };
@@ -205,10 +160,10 @@ class CfgVehicles
         scope = 0;
         class DamageSystem
         {
-            class GlobalHealth { class Health { hitpoints = 4000; }; };
+            class GlobalHealth { class Health { hitpoints = 10000; }; };
             class GlobalArmor
             {
-                class Projectile { class Health { damage = 0.14; }; class Blood { damage = 0.00; }; class Shock { damage = 0.22; }; };  // ~43 shock from 5.56 → 2-shot KO
+                class Projectile { class Health { damage = 0.12; }; class Blood { damage = 0.00; }; class Shock { damage = 0.20; }; };
                 class Melee      { class Health { damage = 0.30; }; class Blood { damage = 0.00; }; class Shock { damage = 0.30; }; };
                 class Infected   { class Health { damage = 0.30; }; class Blood { damage = 0.00; }; class Shock { damage = 0.30; }; };
                 class FragGrenade{ class Health { damage = 0.50; }; class Blood { damage = 0.00; }; class Shock { damage = 0.30; }; };
@@ -222,10 +177,10 @@ class CfgVehicles
         scope = 0;
         class DamageSystem
         {
-            class GlobalHealth { class Health { hitpoints = 6000; }; };
+            class GlobalHealth { class Health { hitpoints = 20000; }; };  // Tanks ~34 .308 shots
             class GlobalArmor
             {
-                class Projectile { class Health { damage = 0.12; }; class Blood { damage = 0.00; }; class Shock { damage = 0.20; }; };  // ~39 shock → 2-shot KO
+                class Projectile { class Health { damage = 0.15; }; class Blood { damage = 0.00; }; class Shock { damage = 0.071; }; };  // ~25 shock/shot → 3 KO
                 class Melee      { class Health { damage = 0.28; }; class Blood { damage = 0.00; }; class Shock { damage = 0.28; }; };
                 class Infected   { class Health { damage = 0.28; }; class Blood { damage = 0.00; }; class Shock { damage = 0.28; }; };
                 class FragGrenade{ class Health { damage = 0.50; }; class Blood { damage = 0.00; }; class Shock { damage = 0.28; }; };
@@ -239,10 +194,10 @@ class CfgVehicles
         scope = 0;
         class DamageSystem
         {
-            class GlobalHealth { class Health { hitpoints = 8000; }; };
+            class GlobalHealth { class Health { hitpoints = 30000; }; };
             class GlobalArmor
             {
-                class Projectile { class Health { damage = 0.08; }; class Blood { damage = 0.00; }; class Shock { damage = 0.0; }; };  // ~35 shock → 3-shot KO
+                class Projectile { class Health { damage = 0.08; }; class Blood { damage = 0.00; }; class Shock { damage = 0.058; }; };
                 class Melee      { class Health { damage = 0.25; }; class Blood { damage = 0.00; }; class Shock { damage = 0.25; }; };
                 class Infected   { class Health { damage = 0.25; }; class Blood { damage = 0.00; }; class Shock { damage = 0.25; }; };
                 class FragGrenade{ class Health { damage = 0.45; }; class Blood { damage = 0.00; }; class Shock { damage = 0.26; }; };
@@ -250,30 +205,30 @@ class CfgVehicles
         };
     };
 
-    class ArmoredHelmet_VisorDown_Nerf: mmg_armored_helmet_visor_black  // visor down variant as base
+    class ArmoredHelmet_VisorDown_Nerf: mmg_armored_helmet_visor_black
     {
         scope = 0;
         class DamageSystem
         {
-            class GlobalHealth { class Health { hitpoints = 8000; }; };
+            class GlobalHealth { class Health { hitpoints = 40000; }; };
             class GlobalArmor
             {
-                class Projectile { class Health { damage = 0.08; }; class Blood { damage = 0.00; }; class Shock { damage = 0.0; }; };  // ~29-37 shock → 18-20+ shots KO
+                class Projectile { class Health { damage = 0.08; }; class Blood { damage = 0.00; }; class Shock { damage = 0.058; }; };
                 class Melee      { class Health { damage = 0.22; }; class Blood { damage = 0.00; }; class Shock { damage = 0.22; }; };
                 class Infected   { class Health { damage = 0.22; }; class Blood { damage = 0.00; }; class Shock { damage = 0.22; }; };
             };
         };
     };
 
-        class ArmoredHelmet_VisorUp_Nerf: mmg_armored_helmet_visor_UP_black  // visor down variant as base
+        class ArmoredHelmet_VisorUp_Nerf: mmg_armored_helmet_visor_UP_black
     {
         scope = 0;
         class DamageSystem
         {
-            class GlobalHealth { class Health { hitpoints = 6000; }; };
+            class GlobalHealth { class Health { hitpoints = 35000; }; };
             class GlobalArmor
             {
-                class Projectile { class Health { damage = 0.08; }; class Blood { damage = 0.00; }; class Shock { damage = 0.0; }; };  // ~29-37 shock → 18-20+ shots KO
+                class Projectile { class Health { damage = 0.08; }; class Blood { damage = 0.00; }; class Shock { damage = 0.058; }; };  // ~29-37 shock → 18-20+ shots KO
                 class Melee      { class Health { damage = 0.22; }; class Blood { damage = 0.00; }; class Shock { damage = 0.22; }; };
                 class Infected   { class Health { damage = 0.22; }; class Blood { damage = 0.00; }; class Shock { damage = 0.22; }; };
             };
