@@ -1,16 +1,3 @@
-////////////////////////////////////////////////////////////////////
-// ArmorNerf - Modifies ALL MMG/JPC_Vest armor values for full-auto nerf
-// Goal:
-// - Nerf full-auto: vests tank 10-30+ AR shots to torso
-// - Big snipers (.308/.50) still 1-tap torso via high base shock/dmg
-// Tiers:
-//   - JPC/TT (standard plate carriers): 600hp, 0.20 health dmg, 0.55 shock
-//   - MK III (heavier): 900hp, 0.16 health dmg, 0.48 shock
-//   - MK V (heaviest): 1500hp, 0.12 health dmg, 0.40 shock
-//
-// Pack as: @ArmorNerf/addons/armor_nerf/config.cpp
-////////////////////////////////////////////////////////////////////
-
 #define _ARMA_
 
 class CfgPatches
